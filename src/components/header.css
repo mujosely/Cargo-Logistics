@@ -1,0 +1,38 @@
+.header_container{
+    height: 70px;
+    width: 100%;
+    /* background-color:#640505e7; */
+    background-color: rgba(240, 80, 31, 0.603);
+   
+}
+
+/* .headerlink{
+    padding-top: 10px;
+    background-color: blue;
+     margin-left: 14%; 
+    display: inline;
+    width: 20px;
+      
+    
+} */
+.headerlink{
+    padding-top: 10px;
+}
+ul{
+  font-size: 20px; 
+  margin-left: 60%;
+  font-weight: bold;
+  color: white;
+  
+};
+ul a{
+    text-decoration: none;
+    
+}
+.headerlink a{
+    text-decoration:none;
+    color: aliceblue;
+    padding: 15px;
+   
+}
+
