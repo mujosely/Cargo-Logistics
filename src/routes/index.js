@@ -9,6 +9,9 @@ import Addshipment from "../components/addshipment";
 import Product from "../components/product";
 import Employer from "../components/employer";
 import Customer from "../components/customer";
+import SignIn from "../views/signin"
+import SignUp from "../views/signup"
+
 
 import { Routes , Route } from "react-router-dom"; 
 const Index = () => {
@@ -17,6 +20,8 @@ const Index = () => {
       <Routes>
        
         <Route exact path="/" element={<Home />}></Route>
+        <Route path='/signin' element={<SignIn/>}/>
+        <Route path='/signup' element={<SignUp/>}/>
         {/* <Route exact path="/Contactus" element={<ContactUs/>}></Route>*/}
         <Route path="/TrackPage" element={<TrackPage/>}></Route>
         <Route path="/AboutUs" element={<AboutUs />}></Route> 

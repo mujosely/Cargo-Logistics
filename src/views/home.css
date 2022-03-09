@@ -30,7 +30,7 @@ input {
 	width: 100%;
 }
 
-button {
+/* button {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
 	background-color: #FF4B2B;
@@ -42,11 +42,11 @@ button {
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
     margin-top: 20px;
-}
+} */
 
-button:active {
+/* button:active {
 	transform: scale(0.95);
-}
+} */
 
 button:focus {
 	outline: none;
@@ -65,4 +65,22 @@ label{
     color: aliceblue;
     margin-top: -20px;
 }
+.home1{
+	background-color:none;
+	margin-left: 70%;
+	height: 50px;
+	width: 300px;
+	margin-top: 1%;
+}
+.home1 a{
+    color: aliceblue;
+    margin: 4px;
+	text-decoration:none;
+	font-size: x-large;
+	color:aliceblue;
+
+}
+
+
+
 
