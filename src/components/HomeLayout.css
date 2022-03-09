@@ -2,14 +2,22 @@
 
 
 .home-container{
-    background-image: url('../assets/cargophoto-removebg-preview.png') ;
+    background-image: url('../assets/lorry\ hd.jpg') ;
     background-size: cover; 
-    background-attachment: fixed; 
+    
+
+        height: 150vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        
+
     
 }
 .home-container1{
-    width:100%;
-    background: rgba(0, 0, 0, 0.507);
+    /* width:100%; */
+    background: none;
 }
 .home-container h3{
     padding-left: 860px;
