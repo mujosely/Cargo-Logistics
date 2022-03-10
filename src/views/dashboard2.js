@@ -1,7 +1,8 @@
 import React from 'react'
-//import HomeLayout from "../components/HomeLayout";
-const Userdashboard = ({children}) => {
+
+const Dashboard2 = ({children}) => {
   return (
+    
     <>
     <div className="am-header">
   <div className="am-header-left">
@@ -102,7 +103,7 @@ const Userdashboard = ({children}) => {
         <li className="nav-item">
           <a href="index.html" className="nav-link">
             <i className="icon ion-ios-home-outline" />
-            <span> Dashboard</span>
+            <span>Dashboard</span>
           </a>
         </li>{/* nav-item */}
         <li className="nav-item">
@@ -111,8 +112,8 @@ const Userdashboard = ({children}) => {
             <span>Forms</span>
           </a> */}
           <ul className="nav-sub" style={{display: 'block'}}>
-            <li className="nav-item"><a href="/allship" className="nav-link">All Shipments</a></li>
-            <li className="nav-item"><a href="/addship" className="nav-link">Add shipment</a></li>
+            <li className="nav-item"><a href="/order" className="nav-link">Shipping</a></li>
+            <li className="nav-item"><a href="/tracks" className="nav-link">Track</a></li>
             <li className="nav-item"><a href="/employer" className="nav-link">Employers</a></li>
     
             <li className="nav-item"><a href="/customer" className="nav-link">Customers</a></li>
@@ -322,4 +323,4 @@ const Userdashboard = ({children}) => {
   )
 }
 
-export default Userdashboard;
+export default Dashboard2
