@@ -2,7 +2,7 @@
 
 
 .home-container{
-    background-image: url('../assets/lorry\ hd.jpg') ;
+    background-image: url('../assets/myonlyship.jpeg ') ;
     background-size: cover; 
     
 
@@ -17,7 +17,7 @@
 }
 .home-container1{
     /* width:100%; */
-    background: none;
+    background: rgba(0, 0, 0, 0.521);
 }
 .home-container h3{
     padding-left: 860px;
@@ -34,17 +34,17 @@ padding-top: 100px;
     /* margin-right: 10px; */
 }
 
-.home-container button{
+ /* .home-container button{
     height: 13vh;
-    width: 300px;
-    border-radius: 15px;
+    width: 300px; 
+     border-radius: 15px;
     text-align: bold;
     color: white;
     background-color: rgb(66, 190, 250);
     margin-left: 920px;
-    /* float: right; */
+    float: right;
     margin-top: 100px; 
-}
+} */
 
 
 

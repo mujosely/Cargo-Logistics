@@ -29,25 +29,38 @@ input {
 	margin: 8px 0;
 	width: 100%;
 }
-
-/* button {
-	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
-	color: #FFFFFF;
-	font-size: 12px;
+.mymain-nav{
+	background-color: none;
+	height: 99%;
+	width: 30%;
+	margin-left: 40%;
+	/* margin-top: 1; */
+	padding-top:60px ;
+	
+}
+.mymain-nav a{
+    color: black;
+    margin: 5px;
+	text-decoration: double;
+	font-size: x-large;
+	text-align: center;
 	font-weight: bold;
-	padding: 10px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
-    margin-top: 20px;
-} */
+	padding: 19px;
+	
 
-/* button:active {
-	transform: scale(0.95);
-} */
+	
 
+}
+.back-b{
+	background-color: none;
+	height: 120px;
+	width: 160px;
+	margin-left: 39%;
+	margin-top: 8%;
+}
+
+
+/* 
 button:focus {
 	outline: none;
 }
@@ -55,7 +68,7 @@ button:focus {
 button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
-}
+} */
 
 label{
     color: aliceblue;
@@ -66,21 +79,84 @@ label{
     margin-top: -20px;
 }
 .home1{
+	/* background-color:hsl(0, 1%, 44%); */
+	 background-color:#7B5844; 
+
+	/* background-color:hsl(0, 1%, 44%); */
+	/* margin-left: 70%; */
+	height: 30%;
+	width: 100%;
+	/* margin-top: 1%; */
+}
+ 
+.content_f{
+	height:80vh;
+	width: 100%;
+	
 	background-color:none;
-	margin-left: 70%;
-	height: 50px;
-	width: 300px;
-	margin-top: 1%;
+	display: flex;
+	
+
 }
-.home1 a{
-    color: aliceblue;
-    margin: 4px;
-	text-decoration:none;
-	font-size: x-large;
-	color:aliceblue;
+.content-kf1{
+	height:90%;
+	width: 50%;
+	
+	background-color:white;
+	margin-left: 10px;
+	
+}
+.content-kf2{
+	height:90%;
+	width: 50%;
+	background-color:none;
+	/* margin-left: 15%; */
+	padding-left: 1%;
+
 
 }
 
+
+
+
+.mycontainer4-ft2 h2{
+	color: black;
+	text-align: center;
+}
+
+.mycontainer5-ft1{
+	height: 30%;
+	width: 15%;
+	
+
+	
+	
+margin-top: 5%;
+margin-left: 40%;
+
+}
+.mycontainer5-ft2{
+	height: 50%;
+	width: 85%;
+	margin-left: 10%;
+	background-color: none;
+
+}
+.mycontainer5-ft2 h2{
+	color: black;
+	text-align: center;
+
+}
+.content-kf3{
+	height: 60%;
+	width: 100%;
+	background-color: none;
+
+}
+.back-b a{
+	color: beige;
+
+}
 
 
 

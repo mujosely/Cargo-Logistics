@@ -6,10 +6,30 @@ import HomeLayout from "../components/HomeLayout";
 import  "../views/home.css"
 import { Form, Input, Checkbox } from 'antd';
 import { MailFilled, LockOutlined , UserOutlined,PhoneOutlined } from '@ant-design/icons';
+import {Carousel} from 'react-bootstrap';
+
+import aircraft from "../assets/aircraft.jpeg" 
+import stock from "../assets/stock.jpeg"
+
+import lorrytransport from "../assets/lorrytransport.jpeg" 
+import shiptransport from "../assets/shiptransport.jpeg"
+import { Card } from 'antd';
+
+const { Meta } = Card;
+
+ 
+
+
+
+
+
 
 
 
 const Homepage = () => {
+  
+  
+  
   const onFinish = (values) => {
     console.log('Success:', values);
   };
@@ -56,12 +76,26 @@ const Homepage = () => {
     <HomeLayout>
       <div className="home-container-child " style={{height:"40vh"}}>
         <div className="home1">
+      <div className="mymain-nav">
+      <a href="../">Home</a> 
       
+        <a href="#" onClick={showModal}>SignUp</a> 
+       
+        <a href="/TrackPage">Track</a>
+        </div>
+        <div className="back-b">
+          
       
-        <a  href="#" onClick={showMyModal} >SignIn  &nbsp; </a> 
-        <a href="#" onClick={showModal}>SignUp</a>
+        <a href="#"><button style={{ width: "170px", height: "50px", marginLeft: "70%", marginTop: "100%",color:"white" }}><h2><a href="#" onClick={showMyModal} >Sign-in  </a> </h2></button></a>
+                
+       
+        </div>
+      
+        
+        
            
       
+
     
         </div>
          <Modal title="PLEASE REGISTER HERE!!!!" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}   style={{  backgroundColor: "black" }}>
@@ -87,15 +121,24 @@ style={{
 >
 <Form.Item
   label=""
-  name="username"
+  name="First name"
   rules={[{ required: true, message: 'Please input your username!' }]}
+  style={{ width: "352px",  }}
+>
+  <Input prefix={<UserOutlined />} placeholder=" please enter your firstrname " />
+</Form.Item>
+<Form.Item
+  label=""
+  name="Last name"
+  rules={[{ required: true, message: 'Please input your lastname!' }]}
   style={{ width: "352px",  }}
 >
   <Input prefix={<UserOutlined />} placeholder=" please enter your username " />
 </Form.Item>
+
 <Form.Item
   label=""
-  name="email"
+  name="Email"
   rules={[{ required: true, message: 'Please input your email!' }]}
   style={{ width: "352px",  }}
 >
@@ -104,7 +147,7 @@ style={{
 </Form.Item>
 <Form.Item
   label=""
-  name="number"
+  name="Mobile"
   rules={[{ required: true, message: 'Please enter your phone number' }]}
   style={{ width: "352px",  }}
 >
@@ -115,7 +158,7 @@ style={{
 
 <Form.Item
   label=""
-  name="password"
+  name="Password"
   rules={[{ required: true, message: 'Please enter your password!' }]}
   style={{ width: "352px",  }}
 >
@@ -168,7 +211,7 @@ style={{
     
 <Form.Item
   label=""
-  name="email"
+  name="Email"
   rules={[{ required: true, message: 'Please input your email!' }]}
   style={{ width: "352px",  }}
 >
@@ -183,7 +226,7 @@ style={{
 
 <Form.Item
   label=""
-  name="password"
+  name="Password"
   rules={[{ required: true, message: 'Please enter your password!' }]}
   style={{ width: "352px",  }}
 >
@@ -200,7 +243,7 @@ placeholder="Password"
 </Form.Item>
 
 <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-  <Button type="primary" htmlType="submit"style={{ width: "160px", height: "40px", marginLeft: "2%", marginTop: "1px" ,background:"black" }} >
+  <Button type="primary" htmlType="submit"style={{ width: "160px", height: "40px", marginLeft: "2%", marginTop: "1px" ,background:"#7B5844" }} >
     Submit
   </Button>
 </Form.Item>
@@ -211,12 +254,181 @@ placeholder="Password"
 
       
 
-        <div className="content" style={{background:"white", marginTop:"400px", width:"100%",height:"190vh"}}>
+ <div className="content" style={{background:"#33383B", marginTop:"650px", width:"100%",height:"150vh"}}>
+
+<div className="content_f">
+< div className="content-kf1">
+<Card>
+   
+   <Carousel
 
 
+
+
+          variant="dark"
+          className="slide Carousel-fade container-corousel">
+            <Carousel.Item>
+             <img src={ aircraft} height="600px" width="1000px" textAlign="center"/>
+             <Carousel.Caption >
+               <h1 style={{color:"white"}}> mydsdfdgfchgvjhkbjnl 1</h1>
+               <h2> air fright</h2>
+              <h2 > 3 campanies in 8 counties and 40 cities</h2>
+             </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+             <img src={lorrytransport } height="600px" width="1000px" textAlign="center"/>
+             <Carousel.Caption>
+               <h1 style={{color:"white"}}>  mysecond</h1>
+               <h2>Land Transport </h2>
+              <h2 > 3 campanies in 8 counties and 40 cities</h2>
+             </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+             <img src={shiptransport}height="600px" width="1000px" marginLeft="2%
+             " textAlign="center"/>
+             <Carousel.Caption>
+               <h1 style={{color:"white"}}> my third</h1>
+               <h2> Ocean freight</h2>
+              <h2 > 3 campanies in 8 counties and 40 cities</h2>
+             </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+             <img src={stock}height="600px" width="1000px" textAlign="center"/>
+             <Carousel.Caption>
+               <h1 style={{color:"white"}}> my four</h1>
+               alt="Third slide"
+
+             </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+  
+     <h2> we  provide services across global </h2> 
+  </Card>,
+
+
+
+  </div>
+<div className="content-kf2">
+<Card>
+   
+   <Carousel
+
+
+
+
+          variant="dark"
+          className="slide Carousel-fade container-corousel">
+            <Carousel.Item>
+             <img src={ aircraft} height="600px" width="1000px" textAlign="center"/>
+             <Carousel.Caption >
+               <h1 style={{color:"white"}}> mydsdfdgfchgvjhkbjnl 1</h1>
+               <h2> air fright</h2>
+              <h2 > 3 campanies in 8 counties and 40 cities</h2>
+             </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+             <img src={lorrytransport } height="600px" width="1000px" textAlign="center"/>
+             <Carousel.Caption>
+               <h1 style={{color:"white"}}>  mysecond</h1>
+               <h2>Land Transport </h2>
+              <h2 > 3 campanies in 8 counties and 40 cities</h2>
+             </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+             <img src={shiptransport}height="600px" width="1000px" marginLeft="2%
+             " textAlign="center"/>
+             <Carousel.Caption>
+               <h1 style={{color:"white"}}> my third</h1>
+               <h2> Ocean freight</h2>
+              <h2 > 3 campanies in 8 counties and 40 cities</h2>
+             </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+             <img src={stock}height="600px" width="1000px" textAlign="center"/>
+             <Carousel.Caption>
+               <h1 style={{color:"white"}}> my four</h1>
+               alt="Third slide"
+
+             </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+  
+     <h2> we  provide services across global </h2> 
+  </Card>,
+
+
+{/* <Card>
+   
+   <Carousel
+
+
+
+
+          variant="dark"
+          className="slide Carousel-fade container-corousel">
+            <Carousel.Item>
+             <img src={ aircraft} height="600px" width="1000px" textAlign="center"/>
+             <Carousel.Caption >
+               <h1 style={{color:"white"}}> </h1>
+              
+             </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+             <img src={lorrytransport } height="600px" width="1000px" textAlign="center"/>
+             <Carousel.Caption>
+               <h1 style={{color:"white"}}>  mysecond</h1>
+               <h2>Land Transport </h2>
+              <h2 > 10 campanies in 12 counties and 60 cities</h2>
+             </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+             <img src={shiptransport}height="600px" width="1000px" marginLeft="2%
+             " textAlign="center"/>
+             <Carousel.Caption>
+               <h1 style={{color:"white"}}> my third</h1>
+               <h2> Ocean freight</h2>
+              <h2 > 6 campanies in 5 counties and 20 cities</h2>
+             </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+             <img src={stock}height="600px" width="1000px" textAlign="center"/>
+             
+             <Carousel.Caption>
+               <h1 style={{color:"white"}}> my four</h1>
+               alt="cvbnjmkl;"
+              <h2> Smart Ware house</h2>
+              <h2 > cove 10000</h2>
+               <h3>sdfghjk</h3>
+
+             </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+  
+     <h2> we  provide services across global </h2> 
+  </Card>, */}
+          
+          
+
+  </div>
+
+  {/* < div className="content-kf3">
+  
+  
+  </div> */}
+
+  </div>
         </div>
 
-
+     
       </div>
     </HomeLayout>
 

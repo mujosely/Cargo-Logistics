@@ -1,8 +1,12 @@
 .header_container{
-    height: 90px;
+    height: 120px;
     width: 100%;
-    /* background-color:#640505e7; */
-    background-color: #FF4B2B;
+   
+    
+    background-color:#7B5844; 
+	background-color:hsl(0, 1%, 44%);
+    /* background-color:#7B5844;
+     */
    
 }
 
@@ -17,12 +21,14 @@
 } */
 .headerlink{
     padding-top: 10px;
+    background-color: none;
 }
 ul{
   font-size: 20px; 
-  margin-left: 60%;
+  margin-left: 75%;
   font-weight: bold;
   color: white;
+  font-size: x-large
   
 };
 ul a{
