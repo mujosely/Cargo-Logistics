@@ -15,6 +15,7 @@ const Employer = () => {
           <th>First Name</th>
           <th>Second nme</th>
           <th>Employer Id</th>
+          <th>Company name</th>
           <th>Telephone</th>
     
         </tr>
@@ -25,9 +26,10 @@ const Employer = () => {
           <td>Tiger Nixon</td>
           <td>System Architect</td>
           <td>47573273839983</td>
+          <td>RwandAir</td>
           <td>0786643907</td>
         </tr>
-        <tr>
+        {/* <tr>
           
           <td>Garrett Winters</td>
           <td>Accountant</td>
@@ -54,7 +56,7 @@ const Employer = () => {
           <td>Accountant</td>
           <td>47573273839983</td>
           <td>0786643907</td>
-        </tr>
+        </tr> */}
       </tbody>
     </table>
   </div>

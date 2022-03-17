@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "../views/home";
-// import ContactUs from  "../views/contact"
+import ContactUs from "../views/contact";
 import TrackPage from "../views/track";
 import AboutUs from "../views/about";
 import Userdashboard from "../views/dashboard";
@@ -14,6 +14,7 @@ import Chart from "../components/chart";
 // end user pages
 import Odering from "../components/ship_odering";
 import Tracks from "../components/tracks";
+import Lastships from "../components/lastships";
 import SignIn from "../views/signin"
 import SignUp from "../views/signup"
 
@@ -27,7 +28,7 @@ const Index = () => {
         <Route exact path="/" element={<Home />}></Route>
         <Route path='/signin' element={<SignIn/>}/>
         <Route path='/signup' element={<SignUp/>}/>
-        {/* <Route exact path="/Contactus" element={<ContactUs/>}></Route>*/}
+        <Route path="/contacting" element={<ContactUs/>}></Route>
         <Route path="/TrackPage" element={<TrackPage/>}></Route>
         <Route path="/AboutUs" element={<AboutUs />}></Route> 
         <Route path="/userdash" element={<Userdashboard />}></Route>
@@ -43,6 +44,7 @@ const Index = () => {
          {/* end-user pages */}
          <Route path="/order" element={<Odering/>}></Route>
          <Route path="/tracks" element={<Tracks/>}></Route>
+         <Route path="/lships" element={<Lastships/>}></Route>
          
 
         
