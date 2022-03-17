@@ -6,7 +6,7 @@ const Userdashboard = ({children}) => {
     <div className="am-header">
   <div className="am-header-left">
 
-    <a href="index.html" className="am-logo">Cargo Logistics</a>
+    <a href="index.html" className="am-logo" style={{marginLeft: '50px'}}>Cargo Logistics</a>
   </div>
   <div className="am-header-right">
     <div className="dropdown dropdown-notification">
@@ -65,15 +65,13 @@ const Userdashboard = ({children}) => {
     </div>
     <div className="dropdown dropdown-profile">
       <a href="#" className="nav-link nav-link-profile" data-toggle="dropdown">
-        <img src="../img/img3.jpg" className="wd-32 rounded-circle" alt />
-        <span className="logged-name"><span className="hidden-xs-down">Joselyne</span> <i className="fa fa-angle-down mg-l-3" /></span>
+        {/* <img src="../img/img3.jpg" className="wd-32 rounded-circle" alt /> */}
+        <span className="logged-name"><span className="hidden-xs-down" style={{fontSize: '20px', fontWeight: 'bold', color: 'aliceblue'}} >Sign out</span> <i className="fa fa-angle-down mg-l-3" /></span>
       </a>
       <div className="dropdown-menu wd-200">
         <ul className="list-unstyled user-profile-nav">
-          <li><a href="#"><i className="icon ion-ios-person-outline" /> Edit Profile</a></li>
-          <li><a href="#"><i className="icon ion-ios-gear-outline" /> Settings</a></li>
-          <li><a href="#"><i className="icon ion-ios-star-outline" /> Favorites</a></li>
-          <li><a href="#"><i className="icon ion-ios-folder-outline" /> Collections</a></li>
+          {/* <li><a href="#"><i className="icon ion-ios-person-outline" /> Edit Profile</a></li>
+          <li><a href="#"><i className="icon ion-ios-gear-outline" /> Settings</a></li> */}
           <li><a href="#"><i className="icon ion-power" /> Sign Out</a></li>
         </ul>
       </div>
@@ -119,56 +117,14 @@ const Userdashboard = ({children}) => {
           </ul>
         </li>{/* nav-item */}
         
-          
-        <li className="nav-item">
-          <a href="#" className="nav-link with-sub">
-            <i className="icon ion-ios-analytics-outline" />
-            <span>Charts</span>
-          </a>
-          <ul className="nav-sub">
-            <li className="nav-item"><a href="/chart" className="nav-link">Customers</a></li>
-            <li className="nav-item"><a href="/chart" className="nav-link">Cargoes</a></li>
-            
-          </ul>
-        </li>{/* nav-item */}
-        <li className="nav-item">
-          <a href="#" className="nav-link with-sub">
-            <i className="icon ion-ios-navigate-outline" />
-            <span>Maps</span>
-          </a>
-          <ul className="nav-sub">
-            <li className="nav-item"><a href="map-google.html" className="nav-link">Google Maps</a></li>
-            <li className="nav-item"><a href="map-vector.html" className="nav-link">Vector Maps</a></li>
-          </ul>
-        </li>{/* nav-item */}
-        <li className="nav-item">
-          <a href="#" className="nav-link with-sub">
-            <i className="icon ion-ios-list-outline" />
-            <span>Tables</span>
-          </a>
-          <ul className="nav-sub">
-            <li className="nav-item"><a href="table-basic.html" className="nav-link">Basic Table</a></li>
-            <li className="nav-item"><a href="table-datatable.html" className="nav-link">Data Table</a></li>
-          </ul>
-        </li>{/* nav-item */}
-        <li className="nav-item">
-          <a href="#" className="nav-link with-sub">
-            <i className="icon ion-ios-bookmarks-outline" />
-            <span>Pages</span>
-          </a>
-          <ul className="nav-sub">
-            <li className="nav-item"><a href="blank.html" className="nav-link">Blank Page</a></li>
-            <li className="nav-item"><a href="page-signin.html" className="nav-link">Signin Page</a></li>
-            <li className="nav-item"><a href="page-signup.html" className="nav-link">Signup Page</a></li>
-            <li className="nav-item"><a href="page-notfound.html" className="nav-link">404 Page Not Found</a></li>
-          </ul>
-        </li>{/* nav-item */}
-        <li className="nav-item">
+        
+        
+        {/* <li className="nav-item">
           <a href="widgets.html" className="nav-link">
             <i className="icon ion-ios-briefcase-outline" />
-            <span>Widgets</span>
+            <span>Personnel</span>
           </a>
-        </li>{/* nav-item */}
+        </li> */}
       </ul>
       <div className="ps__scrollbar-x-rail" style={{left: 0, bottom: 0}}><div className="ps__scrollbar-x" tabIndex={0} style={{left: 0, width: 0}} /></div><div className="ps__scrollbar-y-rail" style={{top: 0, right: 0}}><div className="ps__scrollbar-y" tabIndex={0} style={{top: 0, height: 0}} /></div></div>{/* #mainMenu */}
     <div id="emailMenu" className="tab-pane ps ps--theme_default" data-ps-id="4ade1727-35b2-cbfb-a197-451c8f0cd149">
@@ -317,8 +273,10 @@ const Userdashboard = ({children}) => {
   </div>{/* tab-content */}
 </div>
 
-{children}
+{children} 
+  
   </>
+ 
   )
 }
 

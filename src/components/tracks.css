@@ -1,7 +1,31 @@
-.track{
-    background-color: magenta;
+
+body{
+    background-color: rgb(143, 136, 143);
+    /* opacity: 0.5; */
+    /* background-image: url(../images/cargophoto.jpg); */
+}
+.track-code{
+    background-color: rgb(231, 240, 243);
     margin-left: 800px;
     width: auto;
+    height: 200px;
+    margin-top: 250px;
+}
+.track-code,input{
+  color: white;
+  font-size: 20px;
+  width: 400px;
+  
+    
+}
+
+/* .track-code,h3{
+    color: rgb(224, 96, 10);
+} */
+.track{
+    /* background-color: magenta; */
+    margin-left: 750px;
+    width: auto;
     height: 500px;
-    margin-top: 300px;
+    
 }

@@ -1,0 +1,37 @@
+.about_continer{
+    background-color: rgb(90, 6, 6);
+    height: 200px;
+    width: 80%;
+    margin-top: 200px;
+}
+.about_mission{
+color: aliceblue;
+font-size: 20px;
+margin-left: 100px;
+padding: 10px;
+}
+.about_mission, h1{
+    color: aliceblue;
+}
+
+.about_content{
+    background-color: rgb(43, 40, 43);
+    height: 400px;
+    width: auto;
+    margin-top: 200px;
+    display: flex;
+}
+
+.about_contents{
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 100px;
+    padding: 10px;
+    width: 400px;
+    }
+
+.end_about{
+    /* background-color: red;
+    height: 500px;
+    width: auto; */
+}
