@@ -5,8 +5,42 @@ import React from "react";
  const Footer=()=>{
      return(
        <>
+       
+        <div className="myonlyfooter">
+          <div className="myfooter-k1">  
+          <div className="myfooter-k1f1"><h4> CONTACT INFO</h4></div>
+          <div className="myfooter-k1f2" >
+            
+             
+    <p > Box 3233 </p>
+    <p> +250780273245</p>
+    <p> cargologistics@gmail.com</p>
+         </div>
+          </div>
+          <div className="myfooter-k2ff"> 
+          <div className="myfooter-k2f1"> <h6> copyright &copy; 2022 MASTERMIND</h6></div>
+         
+           
+            </div>
+          <div className="myfooter-k3">
+          <div className="myfooter-k3f1"> <h2> QUICK SERCICES</h2></div>
+          <div className="myfooter-k3f2">
+             <a href="../">Home</a>
+            <a href="../about">About </a>
+            <a href="/login">login</a>
+
+
+            <a href="/signup">signup</a>
+          </div>
+ 
+ 
+            </div> 
+            
+                
+
+        </div>
         
-      <div className="footer-container">
+      {/* <div className="footer-container">
       <div className="container1">
       <div className=" ft-container1">
       <h2> title</h2>
@@ -50,9 +84,10 @@ import React from "react";
         </div>
 
         </div>
+        
+        
 
-
-        </div>
+        </div> */}
 
    </>
             

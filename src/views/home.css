@@ -1,86 +1,115 @@
-.login_form{
-    width: 40%;
-    height: 400px;
-    background-color: rgb(41, 39, 41);
-    margin-left: 60%;
-    margin-top: 30px;
+.home12{
+	
+	height: 60px;
+	/* width: 100%; */
+	
+}
+.mymain-nav{
+	/* #7A5542,
+    #716664
+    #6C4236 */
+	
+	}
+	.allfromhome{
+		background-color: aqua;
+		height: 150vh;
+		width: 100%;
+	}
+	.bg-home1{
+		/* background-color: black; */
+		background-image: url('../assets/shipment.jpeg') ;
+		background-size:cover ;
+		height: 60%;
+		width: 100%;
+		background-position:center;
+		box-sizing: border-box;
+		
+	}
+
+	.bg-home12{
+		
+		background-color: rgba(0, 0, 0, 0.616);
+		width: 100%;
+		height: 100%;
+	}
+	.mymain-nav{
+		height: 90px;
+		width: 100%;
+		background-color:none;
+
+	}
+	.mymain-nav a{
+		
+		color: black;
+		margin-left: 95%;
+		
+	}
+	.mybutton-b1 button{
+	background: linear-gradient(
+			to right,
+			rgb(20, 17, 17),
+			
+			#cccacb,
+			#110603
+		  
+		
+		
+		  );
+		color: black;
+		margin-left: 40%;
+		height: 3%;
+		width: 9%;
+		margin-top: 10%;
+
+	}
+	
+	.mycargo{
+		height:40% ;
+		width: 100%;
+		background-color: blue;
+		background-image: url();
+	}
+	
+
+
+
+
+.home-container-child{
+
+		/* background: rgba(66,190,250); */
+		width:100%;
+		/* min-height:97vh; */
+	
+		background-size: cover; 
+		background-attachment: fixed; 
+		/* height: 12vh; */
+		/* margin-bottom: -13vh; */
+
+}
+.home-f2{
+    width:100%;
+
+background: rgba(0, 0, 0, 0.719);
+
+
+
+
 }
 
-.form-container {
-	position: absolute;
-	transition: all 0.6s ease-in-out;
-    margin-left: 50px;
-    margin-top: 50px;
-}
-form {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 50px;
-	height: 100%;
-	text-align: center;
-}
-
-input {
-	background-color: rgb(95, 92, 92);
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
+.allslide{
+	height: 99%;
 	width: 100%;
+	background-color: aliceblue;
+	display: flex;
 }
-
-/* button {
-	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
-	color: #FFFFFF;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 10px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
-    margin-top: 20px;
-} */
-
-/* button:active {
-	transform: scale(0.95);
-} */
-
-button:focus {
-	outline: none;
+.myfirst-slide{
+	height: 99%;
+	width: 50%;
+	background-color: black;
 }
-
-button.ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
+.mysecond-slide{
+	height: 99%;
+	width: 50%;
+	background-color: rgb(165, 5, 5);
 }
-
-label{
-    color: aliceblue;
-}
-.form__title{
-    font-size: 20px;
-    color: aliceblue;
-    margin-top: -20px;
-}
-.home1{
-	background-color:none;
-	margin-left: 70%;
-	height: 50px;
-	width: 300px;
-	margin-top: 1%;
-}
-.home1 a{
-    color: aliceblue;
-    margin: 4px;
-	text-decoration:none;
-	font-size: x-large;
-	color:aliceblue;
-
-}
-
-
-
 
