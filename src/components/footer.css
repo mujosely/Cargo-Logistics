@@ -1,11 +1,11 @@
 
 
-.footer-container{
+/* .footer-container{
     background-color:rgba(173, 173, 173, 0.658);
     height: 300px;
     width: 100%;
     display: block;
-    margin-top: 280vh;
+    margin-top: 400vh;
     
 }
 .container1{
@@ -75,4 +75,121 @@
 
 
 
+ */
+ .myonlyfooter{
+    height: 20vh;
+    width: 100%;
+    
+    
+    background-color: #6F4338;
+    display: flex;
+}
+/* <div className="home12">
 
+      </div> */
+      /* <div className="mycorgo" style={{background:"#6B6768", marginTop:"650px", width:"100%",height:"90vh"}}> 
+      </div> */
+
+/* p{
+     text-align: center;
+     text-decoration: none;
+    font-size: medium;
+    padding-top: 3%;
+
+
+
+} */
+.myfooter-k1{
+    height: 100%;
+    width: 35%;
+    background-color: none;
+    display: block;
+}
+.myfooter-k1f1{
+   
+    height: 20%;
+    width: 99%;
+    background-color: none;
+    
+}
+.myfooter-k1f1 h4{
+ color:black;
+ font-size: smaller;
+ text-align: center;
+}
+.myfooter-k1f2{
+   
+    height: 80%;
+    width: 99%;
+    background-color:none;
+}
+.myfooter-k1f2 p{
+    color: black;
+    text-align: center;
+    display: block;
+    margin: 1px;
+    font-size: x-small;
+
+   
+}
+    
+
+.myfooter-k2ff{
+    height: 100%;
+    width: 35%;
+    background-color: none;
+   
+}
+.myfooter-k2f1{
+    
+    height: 50%;
+    width: 90%;
+    background-color:none;
+    margin-top: 15%;
+
+
+}
+.myfooter-k2f1 h6{
+   
+   
+    color: black;
+    font-size: xx-small;
+    text-align: center;
+
+}
+.myfooter-k3{
+   
+    height: 100%;
+    width: 35%;
+    background-color: none;
+    display: block;
+}
+.myfooter-k3f1{
+   
+    height: 50%;
+    width: 99%;
+    background-color: none;
+    display: block;
+}
+.myfooter-k3f1 h2{
+   
+    
+    color: black;
+    /* text-align: center; */
+    font-size: smaller;
+}
+.myfooter-k3f2{
+   
+    height: 50%;
+    width: 99%;
+    background-color: none;
+    display: block;
+}
+.myfooter-k3f2 a{
+    color: black;
+    margin: 3px;
+    font-size: smaller;
+    margin-left: 5%;
+   
+    
+}

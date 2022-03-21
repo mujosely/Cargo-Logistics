@@ -4,7 +4,7 @@ import store from "store"
 
 
 
-const Cargo_URL = "https://easy-pharmacy.herokuapp.com";
+const Cargo_URL = "http://127.0.0.1:8000/api/customer/";
 
 
 var config = {
@@ -18,7 +18,8 @@ class Application {
     async createAccount(data) {
         try{
             const response = await axios.post(
-                Cargo_URL + "/user/register",
+                Cargo_URL + "api/customer/aboutus",
+              
                 data,
                 config
             );
@@ -31,76 +32,8 @@ class Application {
     }
 
 
-    async signinAccount(data) {
-      try {
-        const response = await axios.post(
-          Cargo_URL + "/user/login",
-          data,
-          config
-        );
-        return response;
-      } catch (error) {
-        console.log(error);
-      }
-    }
-
-
-
-    async getAllOrderByUserId(){
-      try{
-          const response = await axios.get(
-              Cargo_URL + "/order/one/:id", config
-
-          );
-          return response;
-
-      } catch(error){
-          console.log(error);
-      }
+    
   }
 
-    async getAllDrugs(){
-      try{
-          const response = await axios.get(
-            Cargo_URL + "/drug/all",
-              config 
-
-          );
-
-          
-          return response;
-
-      } catch (error){
-          console.log(error);
-      }
-  }
-
-  async getAllOrders(){
-    try{
-        const response = await axios.get(
-            _URL + "/order/all", config
-
-        );
-        return response;
-
-    } catch(error){
-        console.log(error);
-    }
-}
-
-
-
-  
-  async getAllUsers() {
-    try {
-      const response = await axios.get(
-        Cargo_URL + "/user/all",
-        config
-      );
-
-      return response;
-    } catch (error) {}
-  }
-}
 
 export default new Application();

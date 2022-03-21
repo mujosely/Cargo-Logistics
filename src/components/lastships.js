@@ -1,12 +1,12 @@
 import React from 'react'
-import Dashboard from "../views/dashboard";
+import Dashboard2 from '../views/dashboard2'
 
-const Allshipment = () => {
+const Lastships = () => {
   return (
-      <Dashboard>
-     <div className="card pd-20 pd-sm-40" style={{marginLeft:"230px", marginTop:"100px",marginRight:"50px"}}>
-  <h6 className="card-body-title">All shipments</h6>
-  <p className="mg-b-20 mg-sm-b-30">List of shipments registered by our customers</p>
+      <Dashboard2>
+      <div className="card pd-20 pd-sm-40" style={{marginLeft:"230px", marginTop:"100px",marginRight:"50px"}}>
+  <h6 className="card-body-title">Shipments History</h6>
+  <p className="mg-b-20 mg-sm-b-30">List of shipments you have already done</p>
   <div className="table-wrapper">
     <table id="datatable1" className="table display responsive nowrap">
       <thead>
@@ -113,9 +113,9 @@ const Allshipment = () => {
   </div>{/* table-wrapper */}
 </div>{/* card */}
 
-    </Dashboard>
+      </Dashboard2>
+    
   )
-
 }
 
-export default Allshipment
+export default Lastships

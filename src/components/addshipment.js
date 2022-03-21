@@ -13,7 +13,7 @@ const Addshipment = () => {
         <div className="col-lg-4">
           <div className="form-group">
             <label className="form-control-label" style={{color:"black"}}>Customer names: <span className="tx-danger">*</span></label>
-            <input className="form-control" type="text" name="firstname"  placeholder=" customer names" />
+            <input className="form-control" type="text" name="customername"  placeholder=" customer names" />
           </div>
         </div>{/* col-4 */}
         
@@ -26,27 +26,27 @@ const Addshipment = () => {
         <div className="col-lg-4">
           <div className="form-group">
             <label className="form-control-label" style={{color:"black"}}>Name of product: <span className="tx-danger">*</span></label>
-            <input className="form-control" type="text" name="lastname"  placeholder=" product/Cargo" />
+            <input className="form-control" type="text" name="productname"  placeholder=" product/Cargo" />
           </div>
         </div>{/* col-4 */}
         <div className="col-lg-4">
           <div className="form-group">
             <label className="form-control-label" style={{color:"black"}}>Origin: <span className="tx-danger">*</span></label>
-            <input className="form-control" type="text" name="lastname"  placeholder=" origin" />
+            <input className="form-control" type="text" name="origin"  placeholder=" origin" />
           </div>
         </div>{/* col-4 */}
 
         <div className="col-lg-4">
           <div className="form-group">
             <label className="form-control-label" style={{color:"black"}}>Destination: <span className="tx-danger">*</span></label>
-            <input className="form-control" type="text" name="lastname"  placeholder=" product/Cargo" />
+            <input className="form-control" type="text" name="destination"  placeholder=" product/Cargo" />
           </div>
         </div>{/* col-4 */}
 
         <div className="col-lg-4">
           <div className="form-group">
             <label className="form-control-label" style={{color:"black"}}> Product code: <span className="tx-danger">*</span></label>
-            <input className="form-control" type="text" name="lastname"  placeholder=" Product code" />
+            <input className="form-control" type="text" name="productcode"  placeholder=" Product code" />
           </div>
         </div>{/* col-4 */}
         {/* <div className="col-lg-8"> */}
@@ -56,9 +56,9 @@ const Addshipment = () => {
             <label className="form-control-label"style={{color:"black"}}> Shipment mode: <span className="tx-danger">*</span></label>
             <select className="form-control select2" data-placeholder="choose chipment mode">
               <option label="choose chipment mode" />
-              <option value="USA">Land Transport</option>
-              <option value="UK">Air Transport</option>
-              <option value="China">Water Transport</option>
+              <option value="land">Land Transport</option>
+              <option value="air">Air Transport</option>
+              <option value="water">Water Transport</option>
             
             </select>
           </div>
@@ -68,11 +68,11 @@ const Addshipment = () => {
             <label className="form-control-label" style={{color:"black"}}> Status: <span className="tx-danger">*</span></label>
             <select className="form-control select2" data-placeholder="Choose status">
               <option label="Choose status" />
-              <option value="UK">Pending</option>
-              <option value="China">picked up</option>
-              <option value="China">In Transit</option>
-              <option value="China">Cancelled</option>
-              <option value="China">delivered</option>
+              <option value="pending">Pending</option>
+              <option value="picked">picked up</option>
+              <option value="intransit">In Transit</option>
+              <option value="cancelled">Cancelled</option>
+              <option value="delivered">delivered</option>
             
             
             </select>
@@ -83,14 +83,14 @@ const Addshipment = () => {
       <div className="col-lg-4">
           <div className="form-group">
             <label className="form-control-label" style={{color:"black"}}>Pickup date: <span className="tx-danger">*</span></label>
-            <input className="form-control" type="date" name="date"  placeholder="Enter pickup date" />
+            <input className="form-control" type="date" name="pickeddate"  placeholder="Enter pickup date" />
           </div>
         </div>
         
         <div className="col-lg-4">
           <div className="form-group">
             <label className="form-control-label" style={{color:"black"}}>Expected delivery: <span className="tx-danger">*</span></label>
-            <input className="form-control" type="date" name="date"  placeholder="Enter expected delivery date" />
+            <input className="form-control" type="date" name="expecteddate"  placeholder="Enter expected delivery date" />
           </div>
         </div>
 

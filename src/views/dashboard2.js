@@ -1,5 +1,5 @@
-import React from 'react'
-
+ import React from 'react'
+// import Footer2 from '../components/footer2'
 const Dashboard2 = ({children}) => {
   return (
     
@@ -7,7 +7,7 @@ const Dashboard2 = ({children}) => {
     <div className="am-header">
   <div className="am-header-left">
 
-    <a href="index.html" className="am-logo">Cargo Logistics</a>
+    <a href="index.html" className="am-logo" style={{marginLeft: '50px'}}>Cargo Logistics</a>
   </div>
   <div className="am-header-right">
     <div className="dropdown dropdown-notification">
@@ -66,16 +66,14 @@ const Dashboard2 = ({children}) => {
     </div>
     <div className="dropdown dropdown-profile">
       <a href="#" className="nav-link nav-link-profile" data-toggle="dropdown">
-        <img src="../img/img3.jpg" className="wd-32 rounded-circle" alt />
-        <span className="logged-name"><span className="hidden-xs-down">Joselyne</span> <i className="fa fa-angle-down mg-l-3" /></span>
+        {/* <img src="../img/img3.jpg" className="wd-32 rounded-circle" alt /> */}
+        <span className="logged-name"><span className="hidden-xs-down" style={{fontSize: '20px', fontWeight: 'bold', color: 'aliceblue'}}>Sign out</span> <i className="fa fa-angle-down mg-l-3" /></span>
       </a>
       <div className="dropdown-menu wd-200">
         <ul className="list-unstyled user-profile-nav">
-          <li><a href="#"><i className="icon ion-ios-person-outline" /> Edit Profile</a></li>
-          <li><a href="#"><i className="icon ion-ios-gear-outline" /> Settings</a></li>
-          <li><a href="#"><i className="icon ion-ios-star-outline" /> Favorites</a></li>
-          <li><a href="#"><i className="icon ion-ios-folder-outline" /> Collections</a></li>
-          <li><a href="#"><i className="icon ion-power" /> Sign Out</a></li>
+          {/* <li><a href="#"><i className="icon ion-ios-person-outline" /> Edit Profile</a></li>
+          <li><a href="#"><i className="icon ion-ios-gear-outline" /> Settings</a></li> */}
+          <li><a href="#"><i className="icon ion-power"  /> Sign Out</a></li>
         </ul>
       </div>
     </div>
@@ -83,20 +81,7 @@ const Dashboard2 = ({children}) => {
 </div>
 
   <div className="am-sideleft">
-  {/* <ul className="nav am-sideleft-tab">
-    <li className="nav-item">
-      <a href="#mainMenu" className="nav-link active"><i className="icon ion-ios-home-outline tx-24" /></a>
-    </li>
-    <li className="nav-item">
-      <a href="#emailMenu" className="nav-link"><i className="icon ion-ios-email-outline tx-24" /></a>
-    </li>
-    <li className="nav-item">
-      <a href="#chatMenu" className="nav-link"><i className="icon ion-ios-chatboxes-outline tx-24" /></a>
-    </li>
-    <li className="nav-item">
-      <a href="#settingMenu" className="nav-link"><i className="icon ion-ios-gear-outline tx-24" /></a>
-    </li>
-  </ul> */}
+ 
   <div className="tab-content">
     <div id="mainMenu" className="tab-pane active ps ps--theme_default" data-ps-id="1b5ec199-c8ff-61f0-dd91-83676cdf5b91">
       <ul className="nav am-sideleft-menu">
@@ -112,64 +97,18 @@ const Dashboard2 = ({children}) => {
             <span>Forms</span>
           </a> */}
           <ul className="nav-sub" style={{display: 'block'}}>
-            <li className="nav-item"><a href="/order" className="nav-link">Shipping</a></li>
-            <li className="nav-item"><a href="/tracks" className="nav-link">Track</a></li>
-            <li className="nav-item"><a href="/employer" className="nav-link">Employers</a></li>
-    
-            <li className="nav-item"><a href="/customer" className="nav-link">Customers</a></li>
+            <li className="nav-item"><a href="/order" className="nav-link" style={{fontSize: '17px', fontWeight: 'bold', marginLeft:'-20px'}}> New Shipment</a></li>
+            <li className="nav-item"><a href="/tracks" className="nav-link"style={{fontSize: '17px', fontWeight: 'bold', marginLeft:'-20px'}}>Track shipment</a></li>
+            <li className="nav-item"><a href="/lships" className="nav-link"style={{fontSize: '17px', fontWeight: 'bold', marginLeft:'-20px'}}>Last Shipments </a></li>
+            {/* <li className="nav-item"><a href="/customer" className="nav-link"style={{fontSize: '17px', fontWeight: 'bold', marginLeft:'-20px'}}>Customers</a></li> */}
           </ul>
         </li>{/* nav-item */}
         
           
-        <li className="nav-item">
-          <a href="#" className="nav-link with-sub">
-            <i className="icon ion-ios-analytics-outline" />
-            <span>Charts</span>
-          </a>
-          <ul className="nav-sub">
-            <li className="nav-item"><a href="/chart" className="nav-link">Customers</a></li>
-            <li className="nav-item"><a href="/chart" className="nav-link">Cargoes</a></li>
-            
-          </ul>
-        </li>{/* nav-item */}
-        <li className="nav-item">
-          <a href="#" className="nav-link with-sub">
-            <i className="icon ion-ios-navigate-outline" />
-            <span>Maps</span>
-          </a>
-          <ul className="nav-sub">
-            <li className="nav-item"><a href="map-google.html" className="nav-link">Google Maps</a></li>
-            <li className="nav-item"><a href="map-vector.html" className="nav-link">Vector Maps</a></li>
-          </ul>
-        </li>{/* nav-item */}
-        <li className="nav-item">
-          <a href="#" className="nav-link with-sub">
-            <i className="icon ion-ios-list-outline" />
-            <span>Tables</span>
-          </a>
-          <ul className="nav-sub">
-            <li className="nav-item"><a href="table-basic.html" className="nav-link">Basic Table</a></li>
-            <li className="nav-item"><a href="table-datatable.html" className="nav-link">Data Table</a></li>
-          </ul>
-        </li>{/* nav-item */}
-        <li className="nav-item">
-          <a href="#" className="nav-link with-sub">
-            <i className="icon ion-ios-bookmarks-outline" />
-            <span>Pages</span>
-          </a>
-          <ul className="nav-sub">
-            <li className="nav-item"><a href="blank.html" className="nav-link">Blank Page</a></li>
-            <li className="nav-item"><a href="page-signin.html" className="nav-link">Signin Page</a></li>
-            <li className="nav-item"><a href="page-signup.html" className="nav-link">Signup Page</a></li>
-            <li className="nav-item"><a href="page-notfound.html" className="nav-link">404 Page Not Found</a></li>
-          </ul>
-        </li>{/* nav-item */}
-        <li className="nav-item">
-          <a href="widgets.html" className="nav-link">
-            <i className="icon ion-ios-briefcase-outline" />
-            <span>Widgets</span>
-          </a>
-        </li>{/* nav-item */}
+       
+       
+       
+        
       </ul>
       <div className="ps__scrollbar-x-rail" style={{left: 0, bottom: 0}}><div className="ps__scrollbar-x" tabIndex={0} style={{left: 0, width: 0}} /></div><div className="ps__scrollbar-y-rail" style={{top: 0, right: 0}}><div className="ps__scrollbar-y" tabIndex={0} style={{top: 0, height: 0}} /></div></div>{/* #mainMenu */}
     <div id="emailMenu" className="tab-pane ps ps--theme_default" data-ps-id="4ade1727-35b2-cbfb-a197-451c8f0cd149">
@@ -318,8 +257,10 @@ const Dashboard2 = ({children}) => {
   </div>{/* tab-content */}
 </div>
 
-{children}
+{children} 
+  
   </>
+ 
   )
 }
 

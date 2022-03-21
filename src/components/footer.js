@@ -5,8 +5,42 @@ import React from "react";
  const Footer=()=>{
      return(
        <>
+       
+        <div className="myonlyfooter">
+          <div className="myfooter-k1">  
+          <div className="myfooter-k1f1"><h4> CONTACT INFO</h4></div>
+          <div className="myfooter-k1f2" >
+            
+             
+    <p > Box 3233 </p>
+    <p> +250780273245</p>
+    <p> cargologistics@gmail.com</p>
+         </div>
+          </div>
+          <div className="myfooter-k2ff"> 
+          <div className="myfooter-k2f1"> <h6> copyright &copy; 2022 MASTERMIND</h6></div>
+         
+           
+            </div>
+          <div className="myfooter-k3">
+          <div className="myfooter-k3f1"> <h2> QUICK SERCICES</h2></div>
+          <div className="myfooter-k3f2">
+             <a href="../">Home</a>
+            <a href="../about">About </a>
+            <a href="/login">login</a>
+
+
+            <a href="/signup">signup</a>
+          </div>
+ 
+ 
+            </div> 
+            
+                
+
+        </div>
         
-      <div className="footer-container">
+      {/* <div className="footer-container">
       <div className="container1">
       <div className=" ft-container1">
       <h2> title</h2>
@@ -51,9 +85,9 @@ import React from "react";
 
         </div>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7B5844" fill-opacity="1" d="M0,32L30,74.7C60,117,120,203,180,213.3C240,224,300,160,360,117.3C420,75,480,53,540,74.7C600,96,660,160,720,192C780,224,840,224,900,186.7C960,149,1020,75,1080,80C1140,85,1200,171,1260,213.3C1320,256,1380,256,1410,256L1440,256L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+        
 
-        </div>
+        </div> */}
 
    </>
             

@@ -1,162 +1,115 @@
-.login_form{
-    width: 40%;
-    height: 400px;
-    background-color: rgb(41, 39, 41);
-    margin-left: 60%;
-    margin-top: 30px;
-}
-
-.form-container {
-	position: absolute;
-	transition: all 0.6s ease-in-out;
-    margin-left: 50px;
-    margin-top: 50px;
-}
-form {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 50px;
-	height: 100%;
-	text-align: center;
-}
-
-input {
-	background-color: rgb(95, 92, 92);
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-	width: 100%;
+.home12{
+	
+	height: 60px;
+	/* width: 100%; */
+	
 }
 .mymain-nav{
-	background-color: none;
+	/* #7A5542,
+    #716664
+    #6C4236 */
+	
+	}
+	.allfromhome{
+		background-color: aqua;
+		height: 150vh;
+		width: 100%;
+	}
+	.bg-home1{
+		/* background-color: black; */
+		background-image: url('../assets/shipment.jpeg') ;
+		background-size:cover ;
+		height: 60%;
+		width: 100%;
+		background-position:center;
+		box-sizing: border-box;
+		
+	}
+
+	.bg-home12{
+		
+		background-color: rgba(0, 0, 0, 0.616);
+		width: 100%;
+		height: 100%;
+	}
+	.mymain-nav{
+		height: 90px;
+		width: 100%;
+		background-color:none;
+
+	}
+	.mymain-nav a{
+		
+		color: black;
+		margin-left: 95%;
+		
+	}
+	.mybutton-b1 button{
+	background: linear-gradient(
+			to right,
+			rgb(20, 17, 17),
+			
+			#cccacb,
+			#110603
+		  
+		
+		
+		  );
+		color: black;
+		margin-left: 40%;
+		height: 3%;
+		width: 9%;
+		margin-top: 10%;
+
+	}
+	
+	.mycargo{
+		height:40% ;
+		width: 100%;
+		background-color: blue;
+		background-image: url();
+	}
+	
+
+
+
+
+.home-container-child{
+
+		/* background: rgba(66,190,250); */
+		width:100%;
+		/* min-height:97vh; */
+	
+		background-size: cover; 
+		background-attachment: fixed; 
+		/* height: 12vh; */
+		/* margin-bottom: -13vh; */
+
+}
+.home-f2{
+    width:100%;
+
+background: rgba(0, 0, 0, 0.719);
+
+
+
+
+}
+
+.allslide{
 	height: 99%;
-	width: 30%;
-	margin-left: 40%;
-	/* margin-top: 1; */
-	padding-top:60px ;
-	
-}
-.mymain-nav a{
-    color: black;
-    margin: 5px;
-	text-decoration: double;
-	font-size: x-large;
-	text-align: center;
-	font-weight: bold;
-	padding: 19px;
-	
-
-	
-
-}
-.back-b{
-	background-color: none;
-	height: 120px;
-	width: 160px;
-	margin-left: 39%;
-	margin-top: 8%;
-}
-
-
-/* 
-button:focus {
-	outline: none;
-}
-
-button.ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
-} */
-
-label{
-    color: aliceblue;
-}
-.form__title{
-    font-size: 20px;
-    color: aliceblue;
-    margin-top: -20px;
-}
-.home1{
-	/* background-color:hsl(0, 1%, 44%); */
-	 background-color:#7B5844; 
-
-	/* background-color:hsl(0, 1%, 44%); */
-	/* margin-left: 70%; */
-	height: 30%;
 	width: 100%;
-	/* margin-top: 1%; */
-}
- 
-.content_f{
-	height:80vh;
-	width: 100%;
-	
-	background-color:none;
+	background-color: aliceblue;
 	display: flex;
-	
-
 }
-.content-kf1{
-	height:90%;
+.myfirst-slide{
+	height: 99%;
 	width: 50%;
-	
-	background-color:white;
-	margin-left: 10px;
-	
+	background-color: black;
 }
-.content-kf2{
-	height:90%;
+.mysecond-slide{
+	height: 99%;
 	width: 50%;
-	background-color:none;
-	/* margin-left: 15%; */
-	padding-left: 1%;
-
-
+	background-color: rgb(165, 5, 5);
 }
-
-
-
-
-.mycontainer4-ft2 h2{
-	color: black;
-	text-align: center;
-}
-
-.mycontainer5-ft1{
-	height: 30%;
-	width: 15%;
-	
-
-	
-	
-margin-top: 5%;
-margin-left: 40%;
-
-}
-.mycontainer5-ft2{
-	height: 50%;
-	width: 85%;
-	margin-left: 10%;
-	background-color: none;
-
-}
-.mycontainer5-ft2 h2{
-	color: black;
-	text-align: center;
-
-}
-.content-kf3{
-	height: 60%;
-	width: 100%;
-	background-color: none;
-
-}
-.back-b a{
-	color: beige;
-
-}
-
-
 
