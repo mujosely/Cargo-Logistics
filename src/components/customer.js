@@ -4,7 +4,7 @@ import Dashboard from "../views/dashboard";
 const Customer = () => {
   return (
       <Dashboard>
-       <div className="card pd-20 pd-sm-40" style={{marginLeft:"230px", marginTop:"100px",marginRight:"50px"}}>
+       <div className="card pd-20 pd-sm-40" style={{marginLeft:"300px", marginTop:"100px",marginRight:"50px"}}>
         <h6 className="card-body-title">All customers</h6>
         <p className="mg-b-20 mg-sm-b-30">This is the list of all customers in yourr company  who signed up to your pltform</p>
         <div className="table-responsive">
@@ -14,7 +14,7 @@ const Customer = () => {
           
           <th>Full Name</th>
           <th>Email</th>
-          <th>Password</th>
+          <th>username</th>
           <th>Telephone</th>
     
         </tr>

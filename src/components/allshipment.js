@@ -4,7 +4,7 @@ import Dashboard from "../views/dashboard";
 const Allshipment = () => {
   return (
       <Dashboard>
-     <div className="card pd-20 pd-sm-40" style={{marginLeft:"230px", marginTop:"100px",marginRight:"50px"}}>
+     <div className="card pd-20 pd-sm-40" style={{marginLeft:"300px", marginTop:"100px",marginRight:"50px"}}>
   <h6 className="card-body-title">All shipments</h6>
   <p className="mg-b-20 mg-sm-b-30">List of shipments registered by our customers</p>
   <div className="table-wrapper">
@@ -14,7 +14,6 @@ const Allshipment = () => {
           <th className="wd-15p">First name</th>
           <th className="wd-15p">Last name</th>
           <th className="wd-20p">Product Code</th>
-          <th className="wd-20p">Quantity (kg)</th>
           <th className="wd-15p">date</th>
           <th className="wd-10p">Orgin</th>
           <th className="wd-10p">Destination</th>
@@ -28,7 +27,6 @@ const Allshipment = () => {
         <td>Garrett</td>
           <td>Winters</td>
           <td>Bt002</td>
-          <td>20</td>
           <td>2011/07/25</td>
           <td>Kigali</td>
           <td>Rubavu</td>
