@@ -88,7 +88,7 @@ const Dashboard2 = ({children}) => {
         <li className="nav-item">
           <a href="index.html" className="nav-link">
             <i className="icon ion-ios-home-outline" />
-            <span>Dashboard</span>
+            <span style={{ color: 'white', fontWeight: 'bold', fontSize: '20px'}}>Dashboard</span>
           </a>
         </li>{/* nav-item */}
         <li className="nav-item">
@@ -96,10 +96,10 @@ const Dashboard2 = ({children}) => {
             <i className="icon ion-ios-gear-outline" />
             <span>Forms</span>
           </a> */}
-          <ul className="nav-sub" style={{display: 'block'}}>
-            <li className="nav-item"><a href="/order" className="nav-link" style={{fontSize: '17px', fontWeight: 'bold', marginLeft:'-20px'}}> New Shipment</a></li>
-            <li className="nav-item"><a href="/tracks" className="nav-link"style={{fontSize: '17px', fontWeight: 'bold', marginLeft:'-20px'}}>Track shipment</a></li>
-            <li className="nav-item"><a href="/lships" className="nav-link"style={{fontSize: '17px', fontWeight: 'bold', marginLeft:'-20px'}}>Last Shipments </a></li>
+          <ul className="nav-sub"  style={{display: 'block'}}>
+            <li className="nav-item"><a href="/order" className="nav-link" style={{fontSize: '17px', fontWeight: 'bold', marginLeft:'-20px', color: 'white'}}> New Shipment</a></li>
+            <li className="nav-item"><a href="/tracks" className="nav-link"style={{fontSize: '17px', fontWeight: 'bold', marginLeft:'-20px', color: 'white'}}>Track shipment</a></li>
+            <li className="nav-item"><a href="/lships" className="nav-link"style={{fontSize: '17px', fontWeight: 'bold', marginLeft:'-20px', color: 'white'}}>Last Shipments </a></li>
             {/* <li className="nav-item"><a href="/customer" className="nav-link"style={{fontSize: '17px', fontWeight: 'bold', marginLeft:'-20px'}}>Customers</a></li> */}
           </ul>
         </li>{/* nav-item */}

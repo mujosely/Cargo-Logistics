@@ -4,7 +4,7 @@ import Dashboard2 from '../views/dashboard2'
 const Lastships = () => {
   return (
       <Dashboard2>
-      <div className="card pd-20 pd-sm-40" style={{marginLeft:"230px", marginTop:"100px",marginRight:"50px"}}>
+      <div className="card pd-20 pd-sm-40" style={{marginLeft:"300px", marginTop:"100px",marginRight:"50px"}}>
   <h6 className="card-body-title">Shipments History</h6>
   <p className="mg-b-20 mg-sm-b-30">List of shipments you have already done</p>
   <div className="table-wrapper">
