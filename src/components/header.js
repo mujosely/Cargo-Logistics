@@ -102,7 +102,7 @@ function handleClick(e) {
           <Menu onClick={handleClick} style={{ width: 256 }} mode="vertical" >
     <SubMenu key="sub1" title=" From AFRICAN COUNTRIES"  >
       <Menu.ItemGroup  title="Tanzania-Rwanda">
-        <Menu.Item key="1">     <a href="booking">Schedulerby line  </a> </Menu.Item >
+        <Menu.Item key="1">  <a href="#" onClick={showMyModal}>Scheduler by line</a> </Menu.Item >
    
         
       
@@ -110,7 +110,7 @@ function handleClick(e) {
       </Menu.ItemGroup>
       <Menu.ItemGroup title="Kenya-Rwanda">
         
-      <Menu.Item key="1"><a href="booking">Schedulerby line  </a></Menu.Item>
+      <Menu.Item key="1"><a href="booking"><a href="#" onClick={showMyModal}>Scheduler by line</a>   </a></Menu.Item>
         <Menu.Item key="2">land transport </Menu.Item>
       </Menu.ItemGroup>
     </SubMenu></Menu>
@@ -119,11 +119,11 @@ function handleClick(e) {
           <Menu onClick={handleClick} style={{ width: 256 }} mode="vertical">
     <SubMenu key="sub1" title="ASIA-AFRICA">
       <Menu.ItemGroup title="China-Rwanda">
-        <Menu.Item key="1" ><a href="booking">Schedulerby line </a></Menu.Item>
+        <Menu.Item key="1" ><a href="booking"><a href="#" onClick={showMyModal}>Scheduler by line</a>  </a></Menu.Item>
         <Menu.Item key="2"> Schedulerby PORT</Menu.Item>
       </Menu.ItemGroup>
       <Menu.ItemGroup title="TURKEY-RWANDA">
-      <Menu.Item key="1"><a href="booking">Schedulerby line </a></Menu.Item>
+      <Menu.Item key="1"> <a href="#" onClick={showMyModal}>Scheduler by line</a></Menu.Item>
         <Menu.Item key="2"> Schedulerby PORT</Menu.Item>
       </Menu.ItemGroup>
     </SubMenu></Menu>
@@ -134,7 +134,7 @@ function handleClick(e) {
           <Menu onClick={handleClick} style={{ width: 256 }} mode="vertical">
     <SubMenu key="sub1" title="  EUROPE-AFRICA">
       <Menu.ItemGroup title="france-Rwanda">
-        <Menu.Item key="1"> <a href="booking">Schedulerby line </a></Menu.Item>
+        <Menu.Item key="1"><a href="#" onClick={showMyModal}>Scheduler by line</a></Menu.Item>
         <Menu.Item key="2"> Schedulerby PORT</Menu.Item>
       </Menu.ItemGroup>
       
@@ -145,7 +145,7 @@ function handleClick(e) {
           <Menu onClick={handleClick} style={{ width: 256 }} mode="vertical">
     <SubMenu key="sub1" title="  OCEANIA-AFRICA">
       <Menu.ItemGroup title="AUSTRALIA-RWANDA" >
-        <Menu.Item key="1"><a href="booking">Schedulerby line </a></Menu.Item>
+        <Menu.Item key="1"><a href="#" onClick={showMyModal}>Scheduler by line</a></Menu.Item>
         
         <Menu.Item key="2"> Schedulerby PORT</Menu.Item>
       </Menu.ItemGroup>
@@ -157,7 +157,7 @@ function handleClick(e) {
           <Menu onClick={handleClick} style={{ width: 256 }} mode="vertical">
     <SubMenu key="sub1" title="  AMERICA-AFRICA">
       <Menu.ItemGroup title="USA-Rwanda">
-        <Menu.Item key="1"><a href="booking">Schedulerby line </a></Menu.Item>
+        <Menu.Item key="1"> <a href="#" onClick={showMyModal}>Scheduler by line</a></Menu.Item>
         <Menu.Item key="2"> Schedulerby PORT</Menu.Item>
       </Menu.ItemGroup>
      
@@ -199,7 +199,7 @@ function handleClick(e) {
               
               </div>
             </ul> 
-         
+            <a href="#" onClick={showMyModal}>Login</a> 
               </div> 
                 
              

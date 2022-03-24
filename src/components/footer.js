@@ -1,94 +1,32 @@
 import React from "react";
  import "./footer.css";
+ import logo from "../assets/logo.JPG";
 
 
  const Footer=()=>{
      return(
        <>
        
-        <div className="myonlyfooter">
-          <div className="myfooter-k1">  
-          <div className="myfooter-k1f1"><h4> CONTACT INFO</h4></div>
-          <div className="myfooter-k1f2" >
-            
-             
-    <p > Box 3233 </p>
-    <p> +250780273245</p>
-    <p> cargologistics@gmail.com</p>
-         </div>
-          </div>
-          <div className="myfooter-k2ff"> 
-          <div className="myfooter-k2f1"> <h6> copyright &copy; 2022 MASTERMIND</h6></div>
+     
+       <footer className="iq-footer white-bg text-center">
+  <div className="container">
+    <div className="row">
+      <div className="col-md-10 col-md-offset-1">
+        <div className="footer-info iq-mt-50 iq-mb-30">
+        <img src={logo} width="25%" height="90%" />
          
-           
-            </div>
-          <div className="myfooter-k3">
-          <div className="myfooter-k3f1"> <h2> QUICK SERCICES</h2></div>
-          <div className="myfooter-k3f2">
-             <a href="../">Home</a>
-            <a href="../about">About </a>
-            <a href="/login">login</a>
-
-
-            <a href="/signup">signup</a>
-          </div>
- 
- 
-            </div> 
-            
-                
-
-        </div>
-        
-      {/* <div className="footer-container">
-      <div className="container1">
-      <div className=" ft-container1">
-      <h2> title</h2>
-        <p> Cargo logistics is one of the world's leading logistics campanies.
-            it strong market position lies in the seafreight, airfreight,contract 
-            logistics and 
-            overland businesses"</p>
-        
-        </div>
-        <div className=" ft1-container1">
-        <h4> contact info</h4>
-    <br></br>
-    <p> Box 3233
-    <p> +250780273245</p>
-    </p>
-
-    <p> cargologistics@gmail.com</p>
-        
-        </div>
-
-        </div>
-        <div className="container2">
-        <div className=" ft1-container2">
-        <h6> copyright &copy; 2022 corgo logistics </h6> 
-        
-        </div>
-        <div className=" ft2-container2">
-        <div className="navbar-right">
-            
-            <a href="../">Home</a>
-            <a href="../about">About </a>
-            <a href="/login">update</a>
-
-
-            <a href="/signup">services</a>
-            <a href="/login">contact</a>
-           
     
-</div>
-        
+          <p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
         </div>
-
-        </div>
-        
-        
-
-        </div> */}
-
+      </div>
+    </div>
+    <div className="row">
+      <div className="col-sm-12">
+        <div className="footer-copyright iq-ptb-20">Copyright @ <span id="copyright"> 2022</span> <a href="javascript:void(0)" className="text-green">Cargo logistics system.</a> All Rights Reserved </div>
+      </div>
+    </div>
+  </div>
+</footer>
    </>
             
      )
