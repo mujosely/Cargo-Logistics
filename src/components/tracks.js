@@ -1,11 +1,11 @@
 import React from 'react'
 import "./tracks.css";
 import Dashboard2 from '../views/dashboard2';
-// import jose from '../images/Flowers.jpg';
+import jose from '../images/Flowers.jpg';
 const Tracks = () => {
   return (
       <Dashboard2>
-        {/* <img src={jose} alt="flowerhh" height="300px" width="300px" /> */}
+        <img src={jose} alt="flowerhh" height="300px" width="300px" />
          <div className="track-code">
          
            <input type="text" name = "track" placeholder='Enter tracking code'/>
