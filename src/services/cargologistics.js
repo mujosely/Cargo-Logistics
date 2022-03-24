@@ -18,11 +18,12 @@ class Application {
     async createAccount(data) {
         try{
             const response = await axios.post(
-                Cargo_URL + "api/customer/aboutus",
+                Cargo_URL + "",
               
                 data,
                 config
             );
+            console.log(response)
             return response;
         }
         catch (error){
