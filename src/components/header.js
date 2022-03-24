@@ -294,7 +294,7 @@ placeholder="Password"
 
 
 <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-<Button type="primary" htmlType="submit"style={{ width: "160px", height: "40px", marginLeft: "2%", marginTop: "1px" ,background:"#1890FF" }} >
+<Button type="primary" htmlType="submit"style={{ width: "160px", height: "41px", marginLeft: "2%", marginTop: "1px" ,background:"#1890FF" }} >
  Submit
 </Button>
 </Form.Item>
