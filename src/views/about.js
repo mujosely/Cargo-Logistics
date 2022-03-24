@@ -403,7 +403,7 @@ const AboutUs = () => {
                         <div className="heading-title">
                           <h2 className="title iq-tw-6">Loved By Our Customers</h2>
                           <div className="divider" />
-                          <p>Our Customer are our priority. we believe in providing best services to them. </p>
+                          <p>Our Customer are our priority. we believe in providing best services to the. </p>
                         </div>
                       </div>
                     </div>
@@ -417,10 +417,10 @@ const AboutUs = () => {
                               </div>
                               <div className="client-info">
                                 <div className="client-name iq-mb-10">
-                                  <h5 className="iq-tw-6">Jason Adams</h5>
-                                  <span className="sub-title iq-tw-6">CEO, Appino</span>
+                                  <h5 className="iq-tw-6">KAREMERA ALICE</h5>
+                                  <span className="sub-title iq-tw-6">CEO, OF cargo logistics system</span>
                                 </div>
-                                <p>Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli incididunt ut labore.</p>
+                                <p>  it our pleasuere to make you happy with best services at real time.</p>
                               </div>
                             </div>
                           </div>
@@ -431,10 +431,10 @@ const AboutUs = () => {
                               </div>
                               <div className="client-info">
                                 <div className="client-name iq-mb-10">
-                                  <h5 className="iq-tw-6">Amy Adams</h5>
-                                  <span className="sub-title iq-tw-6">CEO, Appino</span>
+                                  <h5 className="iq-tw-6"> Joselyne </h5>
+                                  <span className="sub-title iq-tw-6"> secretary  ,cargo logistics system</span>
                                 </div>
-                                <p>Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli incididunt ut labore.</p>
+                                <p> good services with affordable price .</p>
                               </div>
                             </div>
                           </div>
@@ -445,10 +445,10 @@ const AboutUs = () => {
                               </div>
                               <div className="client-info">
                                 <div className="client-name iq-mb-10">
-                                  <h5 className="iq-tw-6">John Deo</h5>
-                                  <span className="sub-title iq-tw-6">CEO, Appino</span>
+                                  <h5 className="iq-tw-6"> Dukuze Ephrosine</h5>
+                                  <span className="sub-title iq-tw-6"> disigner</span>
                                 </div>
-                                <p>Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli incididunt ut labore.</p>
+                                <p>your benefits and happiness is our priority.</p>
                               </div>
                             </div>
                           </div>
@@ -659,14 +659,16 @@ const AboutUs = () => {
                       <div className="col-sm-6 col-md-3">
                         <div className="iq-pricing text-center">
                           <div className="price-title green-bg ">
-                            <h1 className="iq-font-white iq-tw-7"><small>$</small>19<small>/Month</small></h1>
-                            <span className="text-uppercase iq-tw-6 iq-font-white">BASIC</span>
+                            <h1 className="iq-font-white iq-tw-7"><small>$</small>14<small>/KG</small></h1>
+                            <span className="text-uppercase iq-tw-6 iq-font-white">IN LINE Schedule</span>
                           </div>
                           <ul>
-                            <li>100 MB Disk Space</li>
-                            <li>2 Subdomains</li>
-                            <li>5 Email Accounts</li>
-                            <li>Webmail Support</li>
+                            <li> EVERY ASIAN COUNTRY TO RWANDA</li>
+                            <li> We take  3 to  7 days from time </li>
+                            <li> We supply only legal product</li>
+                            <li> Any challenge dont hesitate to call us
+                    
+                            </li>
                             <li>Customer Support 24/7</li>
                           </ul>
                           <div className="price-footer">
@@ -677,14 +679,17 @@ const AboutUs = () => {
                       <div className="col-sm-6 col-md-3 re7-mt-50">
                         <div className="iq-pricing text-center">
                           <div className="price-title green-bg ">
-                            <h1 className="iq-font-white iq-tw-7"><small>$</small>29<small>/Month</small></h1>
-                            <span className="text-uppercase iq-tw-6 iq-font-white">STANDARD</span>
+                            <h1 className="iq-font-white iq-tw-7"><small>$</small>12<small>/metter square</small></h1>
+                            <span className="text-uppercase iq-tw-6 iq-font-white"> PORT Schedule</span>
                           </div>
                           <ul>
-                            <li>100 MB Disk Space</li>
-                            <li>2 Subdomains</li>
-                            <li>5 Email Accounts</li>
-                            <li>Webmail Support</li>
+                            
+                          <li>  USA TO RWANDA</li>
+                            <li> We take  3 to  7 days from time </li>
+                            <li> We supply only legal product</li>
+                            <li> Any challenge dont hesitate to call us
+                    
+                            </li>
                             <li>Customer Support 24/7</li>
                           </ul>
                           <div className="price-footer">
