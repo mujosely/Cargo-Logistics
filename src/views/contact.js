@@ -7,85 +7,31 @@ const ContactUs = () => {
     <>
     <section id="blog" className="overview-block-ptb white-bg iq-blog">
     <div className="container">
+      
+      
       <div className="row">
-        <div className="col-sm-12">
-          <div className="heading-title">
-            <h2 className="title iq-tw-6">Latest Blog Post</h2>
-            <div className="divider" />
-            <p>We have completely updated our work, making it much easier for you to find the information you need. Check out the recently updated work and learn more about application.</p>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-sm-12 col-md-4">
-          <div className="iq-blog-box">
-            <div className="iq-blog-image clearfix">
-              <img className="img-responsive center-block" src="images/blog/01.jpg" alt="#" />
-            </div>
-            <div className="iq-blog-detail">
-              <div className="blog-title"> <a href="blog-single.html"><h5 className="iq-tw-6">Blogpost With Image</h5> </a> </div>
-              <div className="iq-blog-meta">
-                <ul className="list-inline">
-                  <li><a href="javascript:void(0)"><i className="fa fa-calendar" aria-hidden="true" /> 12 Aug 2017</a></li>
-                  <li><a href="javascript:void(0)"><i className="fa fa-comment-o" aria-hidden="true" /> 5</a></li>
-                </ul>
-              </div>
-              <div className="blog-content">
-                <p>Quae laboriosam sunt consectetur, assumenda provident lorem ipsum dolor sit amet, consectetur adipisicing elit. hic perspiciatis.</p>
-              </div>
-              <div className="blog-button">
-                <a href="javascript:void(0)" className="pull-left iq-tw-6 iq-user"><i className="fa fa-user-circle" aria-hidden="true" /> Tom Tilak</a>
-                <a href="javascript:void(0)" className="pull-right iq-tw-6">Read More <i className="fa fa-angle-right" aria-hidden="true" /></a> </div>
-            </div>
-          </div>
-        </div>
+        
+        
         <div className="col-sm-12 col-md-4 re-mt-30">
           <div className="iq-blog-box">
-            <div className="iq-blog-image clearfix">
-              <img className="img-responsive center-block" src="images/blog/02.jpg" alt="#" />
-            </div>
+           
+           
             <div className="iq-blog-detail">
               <div className="blog-title"> <a href="blog-single.html"><h5 className="iq-tw-6">Blogpost With Image</h5> </a> </div>
-              <div className="iq-blog-meta">
-                <ul className="list-inline">
-                  <li><a href="javascript:void(0)"><i className="fa fa-calendar" aria-hidden="true" /> 12 Aug 2017</a></li>
-                  <li><a href="javascript:void(0)"><i className="fa fa-comment-o" aria-hidden="true" /> 5</a></li>
-                </ul>
-              </div>
-              <div className="blog-content">
-                <p>Quae laboriosam sunt consectetur, assumenda provident lorem ipsum dolor sit amet, consectetur adipisicing elit. hic perspiciatis.</p>
-              </div>
-              <div className="blog-button">
-                <a href="javascript:void(0)" className="pull-left iq-tw-6 iq-user"><i className="fa fa-user-circle" aria-hidden="true" /> Tom Tilak</a>
-                <a href="javascript:void(0)" className="pull-right iq-tw-6">Read More <i className="fa fa-angle-right" aria-hidden="true" /></a> </div>
+             
+             
+           
+           
+             
+             
+               
+               
             </div>
           </div>
         </div>
-        <div className="col-sm-12 col-md-4 re-mt-30">
-          <div className="iq-blog-box">
-            <div className="iq-blog-image clearfix">
-              <img className="img-responsive center-block" src="images/blog/03.jpg" alt="#" />
-            </div>
-            <div className="iq-blog-detail">
-              <div className="blog-title"> <a href="blog-single.html"><h5 className="iq-tw-6">Blogpost With Image</h5> </a> </div>
-              <div className="iq-blog-meta">
-                <ul className="list-inline">
-                  <li><a href="javascript:void(0)"><i className="fa fa-calendar" aria-hidden="true" /> 12 Aug 2017</a></li>
-                  <li><a href="javascript:void(0)"><i className="fa fa-comment-o" aria-hidden="true" /> 5</a></li>
-                </ul>
-              </div>
-              <div className="blog-content">
-                <p>Quae laboriosam sunt consectetur, assumenda provident lorem ipsum dolor sit amet, consectetur adipisicing elit. hic perspiciatis.</p>
-              </div>
-              <div className="blog-button">
-                <a href="javascript:void(0)" className="pull-left iq-tw-6 iq-user"><i className="fa fa-user-circle" aria-hidden="true" /> Tom Tilak</a>
-                <a href="javascript:void(0)" className="pull-right iq-tw-6">Read More <i className="fa fa-angle-right" aria-hidden="true" /></a> </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-sm-12 text-center">
-          <a className="button iq-mt-50" href="blog-2-columns.html">Go To Blog</a>
-        </div>
+        
+       
+       
       </div>
     </div>
   </section>
@@ -164,7 +110,7 @@ const ContactUs = () => {
       </div>
     </div>
   </form>
-  <div id="ajaxloader" style={{display: 'none'}}><img className="center-block mt-30 mb-30" src="images/ajax-loader.gif" alt /></div>
+  <div id="ajaxloader" style={{display: 'none'}}><img className="center-block mt-30 mb-30" src="images/logo" alt /></div>
 </div>
 
 {/* footer */}
@@ -174,13 +120,13 @@ const ContactUs = () => {
       <div className="col-md-10 col-md-offset-1">
         <div className="footer-info iq-mt-50 iq-mb-30">
           <img id="logo_img" className="img-responsive center-block iq-mb-10 wow zoomIn" data-wow-duration="1s" src="images/logo-footer.png" alt style={{visibility: 'visible', animationDuration: '1s', animationName: 'zoomIn'}} />
-          <p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
+          <p>call us if you need any help or sugestion </p>
         </div>
       </div>
     </div>
     <div className="row">
       <div className="col-sm-12">
-        <div className="footer-copyright iq-ptb-20">Copyright @ <span id="copyright"> 2022</span> <a href="javascript:void(0)" className="text-green">Appino.</a> All Rights Reserved </div>
+        <div className="footer-copyright iq-ptb-20">Copyright @ <span id="copyright"> 2022</span> <a href="javascript:void(0)" className="text-green">cargo logistics system.</a> All Rights Reserved </div>
       </div>
     </div>
   </div>
