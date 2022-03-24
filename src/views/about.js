@@ -50,7 +50,7 @@ const AboutUs = () => {
 </header>
       
     </div>
-    <section id="iq-home" classname="banner iq-bg iq-bg-fixed iq-box-shadow iq-over-black-90" style={{background: 'url(images/banner/bg.jpg)'}}>
+    <section id="iq-home" classname="banner iq-bg iq-bg-fixed iq-box-shadow iq-over-black-90" style={{background: 'url(images/banner/bg.JPEG )' ,backgroundColor:"blue", backgroundPosition:"center" , }}>
       <div id="carousel-example-generic" classname="carousel slide" data-ride="carousel">
       
       
@@ -121,7 +121,7 @@ const AboutUs = () => {
                                     </i></i></i></div><i classname="ion-social-apple"><i classname="ion-social-android"><i classname="ion-social-windows">
                                     <div classname="col-sm-4 col-lg-4 col-md-4 hidden-xs">
                                       <div classname="img-one pull-right">
-                                        <img classname="img-responsive center-block" data-animation="animated rotateInDownRight" src="images/banner/01.png" alt="#" />
+                                        <img classname="img-responsive center-block" data-animation="animated rotateInDownRight" src="images/banner/01.JPEG" alt="#" />
                                       </div>
                                     </div>
                                   </i></i></i></div><i classname="ion-social-apple"><i classname="ion-social-android"><i classname="ion-social-windows">
@@ -622,30 +622,8 @@ const AboutUs = () => {
                     </div>
                   </div>
                 </section>
-                {/* Frequently Asked Questions END */}
-                {/* Frequently Asked Questions */}
-                <section className="overview-block-ptb iq-bg iq-bg-fixed iq-over-black-80" style={{background: 'url(images/about/04.jpg)'}}>
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-sm-12">
-                        <div className="heading-title iq-mb-40">
-                          <h2 className="title iq-tw-6 iq-font-white">Download App</h2>
-                          <div className="divider white" />
-                          <p className="iq-font-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-sm-12 text-center">
-                        <a className="button button-icon iq-mr-15" href="# "> <i className="ion-social-apple" /> App Store</a>
-                        <a className="button button-icon iq-mr-15 re4-mt-20" href="# "> <i className="ion-social-android" /> Google Play</a>
-                        <a className="button button-icon re7-mt-30 re4-mt-20" href="# "> <i className="ion-social-windows" /> Windows Store</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                {/* Frequently Asked Questions END */}
-                {/* Affordable Price */}
+               
+               
                 <section id="pricing" className="overview-block-ptb grey-bg iq-price-table">
                   <div className="container">
                     <div className="row">
@@ -674,7 +652,7 @@ const AboutUs = () => {
                             <li>Customer Support 24/7</li>
                           </ul>
                           <div className="price-footer">
-                            <a className="button" href="# ">Purchase</a>
+                            <a className="button" href="# ">ship</a>
                           </div>
                         </div>
                       </div>
@@ -697,7 +675,7 @@ const AboutUs = () => {
                             <li>Customer Support 24/7</li>
                           </ul>
                           <div className="price-footer">
-                            <a className="button" href="# ">Purchase</a>
+                            <a className="button" href="# ">ship</a>
                           </div>
                         </div>
                       </div>
@@ -743,7 +721,7 @@ const AboutUs = () => {
                             <li>Customer Support 24/7</li>
                           </ul>
                           <div className="price-footer">
-                            <a className="button" href="# ">Purchase</a>
+                            <a className="button" href="# ">ship</a>
                           </div>
                         </div>
                       </div>
