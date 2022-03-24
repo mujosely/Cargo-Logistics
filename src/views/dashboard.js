@@ -23,7 +23,7 @@ const Userdashboard = ({children}) => {
          {/* loop starts here  */}
           <a href="#" className="media-list-link read">
             <div className="media pd-x-20 pd-y-15">
-              <img src="../img/img8.jpg" className="wd-40 rounded-circle" alt />
+              {/* <img src="../img/img8.jpg" className="wd-40 rounded-circle" alt /> */}
               <div className="media-body">
                 <p className="tx-13 mg-b-0"><strong className="tx-medium">Ikuze Euphrozine</strong> Your arival time was not followed, better to work on time</p>
                 <span className="tx-12">October 03, 2017 8:45am</span>
@@ -32,7 +32,7 @@ const Userdashboard = ({children}) => {
           </a>
           <a href="#" className="media-list-link read">
             <div className="media pd-x-20 pd-y-15">
-              <img src="../img/img9.jpg" className="wd-40 rounded-circle" alt />
+              {/* <img src="../img/img9.jpg" className="wd-40 rounded-circle" alt /> */}
               <div className="media-body">
                 <p className="tx-13 mg-b-0"><strong className="tx-medium">Cyusa Ayman</strong> I appreciated your shippment strategies <strong className="tx-medium">Much respect </strong></p>
                 <span className="tx-12">October 02, 2017 12:44am</span>
@@ -41,7 +41,7 @@ const Userdashboard = ({children}) => {
           </a>
           <a href="#" className="media-list-link read">
             <div className="media pd-x-20 pd-y-15">
-              <img src="../img/img10.jpg" className="wd-40 rounded-circle" alt />
+              {/* <img src="../img/img10.jpg" className="wd-40 rounded-circle" alt /> */}
               <div className="media-body">
                 <p className="tx-13 mg-b-0">20+ new items added are for shipping in  <strong className="tx-medium">Rwanda</strong></p>
                 <span className="tx-12">October 01, 2017 10:20pm</span>
@@ -50,7 +50,7 @@ const Userdashboard = ({children}) => {
           </a>
           <a href="#" className="media-list-link read">
             <div className="media pd-x-20 pd-y-15">
-              <img src="../img/img5.jpg" className="wd-40 rounded-circle" alt />
+              {/* <img src="../img/img5.jpg" className="wd-40 rounded-circle" alt /> */}
               <div className="media-body">
                 <p className="tx-13 mg-b-0"><strong className="tx-medium">Alice Iradukunda</strong> I enjoyed your services </p>
                 <span className="tx-12">October 01, 2017 6:08pm</span>
@@ -80,20 +80,7 @@ const Userdashboard = ({children}) => {
 </div>
 
   <div className="am-sideleft">
-  {/* <ul className="nav am-sideleft-tab">
-    <li className="nav-item">
-      <a href="#mainMenu" className="nav-link active"><i className="icon ion-ios-home-outline tx-24" /></a>
-    </li>
-    <li className="nav-item">
-      <a href="#emailMenu" className="nav-link"><i className="icon ion-ios-email-outline tx-24" /></a>
-    </li>
-    <li className="nav-item">
-      <a href="#chatMenu" className="nav-link"><i className="icon ion-ios-chatboxes-outline tx-24" /></a>
-    </li>
-    <li className="nav-item">
-      <a href="#settingMenu" className="nav-link"><i className="icon ion-ios-gear-outline tx-24" /></a>
-    </li>
-  </ul> */}
+  
   <div className="tab-content">
     <div id="mainMenu" className="tab-pane active ps ps--theme_default" data-ps-id="1b5ec199-c8ff-61f0-dd91-83676cdf5b91">
       <ul className="nav am-sideleft-menu">
