@@ -213,6 +213,8 @@ const AboutUs = () => {
                       
                       
 
+
+
                         {/* Nav tabs */}
                         <ul className="nav nav-tabs" role="tablist">
                           <li role="presentation" className="active wow fadeInLeft" data-wow-duration="1s">
@@ -752,6 +754,7 @@ const AboutUs = () => {
                 {/* Latest Blog Post */}
             
   <div>
+
     
     </div>
                       </div>

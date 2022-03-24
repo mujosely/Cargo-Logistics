@@ -5,6 +5,11 @@ const Employer = () => {
   return (
     <Dashboard>
      <div className="card pd-20 pd-sm-40" style={{marginLeft:"300px", marginTop:"100px",marginRight:"50px"}}>
+        
+     <div className="form-layout-footer">
+        <a href="/newemployer" className="nav-link"> <button className="btn btn-info mg-r-5">Add new </button></a>
+      </div>
+        
         <h6 className="card-body-title">All employers</h6>
         <p className="mg-b-20 mg-sm-b-30">Here is the list of all employers in yourr company </p>
         <div className="table-responsive">

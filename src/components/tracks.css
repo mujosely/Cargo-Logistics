@@ -3,6 +3,13 @@ body{
     background-color: rgb(143, 136, 143);
     /* opacity: 0.5; */
     /* background-image: url(../images/cargophoto.jpg); */
+    /* background-image: url('../assets/shipment.jpeg') ;
+    background-size:cover ;
+		height: 60%;
+		width: 100%;
+		background-position:center;
+		box-sizing: border-box; */
+		
 }
 .track-code{
     background-color: rgb(231, 240, 243);

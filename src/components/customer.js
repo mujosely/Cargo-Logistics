@@ -27,35 +27,7 @@ const Customer = () => {
           <td>muragijejose23</td>
           <td>0786643907</td>
         </tr>
-        <tr>
           
-          <td>Garrett Winters</td>
-          <td>mujoselyne@gmail.com</td>
-          <td>muragijejose23</td>
-          <td>0786643907</td>
-        </tr>
-        <tr>
-          
-          <td>Ashton Cox</td>
-          <td>mujoselyne@gmail.com</td>
-          <td>muragijejose23</td>
-          <td>0786643907</td>
-        </tr>
-        <tr>
-          
-          <td>Cedric Kelly</td>
-          <td>mujoselyne@gmail.com</td>
-          <td>muragijejose23</td>
-          <td>0786643907</td>
-        </tr>
-        <tr>
-          
-          <td>Airi Satou</td>
-          <td>mujoselyne@gmail.com</td>
-          <td>muragijejose23</td>
-          <td>0786643907</td>
-          
-        </tr>
       </tbody>
     </table>
   </div>

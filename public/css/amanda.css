@@ -3040,6 +3040,7 @@ tbody.collapse.show {
 
 .tab-content > .tab-pane {
   display: none;
+
 }
 .tab-content > .active {
   display: block;
@@ -11885,11 +11886,21 @@ textarea.parsley-success:focus {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 15%;
   display: flex;
   align-items: center;
+ 
   justify-content: space-between;
-  background-color: rgba(240, 80, 31, 0.603);
+ 
+  background: linear-gradient(
+    to right,
+    #326dec,
+    
+    #5c6ae4e8,
+    #6dd7f1
+
+  ); 
+  
   padding: 0 15px 0 0;
   z-index: 1000;
 }
@@ -12070,7 +12081,14 @@ textarea.parsley-success:focus {
   width: 300px;
   /* margin-left: -240px; */
   
-  background-color: #727b84;
+  background-color:   #326dec;
+  /* background: linear-gradient(
+        to right,
+        #326dec,
+        
+        #6dd7f1,
+        #5c6ae4e8
+      );  */
   transition: all 0.2s ease-in-out; 
   
 }
@@ -12093,7 +12111,7 @@ textarea.parsley-success:focus {
   */
   height: 500px;
   width: 300px;
-  /* background-color: #868ba1; */
+  /* background-color: #5bc0de; */
   
   
 }
