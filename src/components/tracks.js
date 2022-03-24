@@ -12,6 +12,7 @@ const Tracks = () => {
            
            <button type="button" class="btn btn-secondary pd-x-25 active" style={{fontSize: '20px', fontWeight: 'bold'}}>Track Results</button>
            </div>
+           
         <div className="track">
           
           <div className="card pd-20 pd-sm-40" >

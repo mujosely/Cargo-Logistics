@@ -12065,29 +12065,37 @@ textarea.parsley-success:focus {
 .am-sideleft {
    position: fixed;
   top: 60px;
-  left: -240px;
+  /* left: -240px; */
   bottom: 0;
-  width: 490px;
-  margin-left: -240px;
+  width: 300px;
+  /* margin-left: -240px; */
   
-  background-color: #fff;
+  background-color: #727b84;
   transition: all 0.2s ease-in-out; 
+  
 }
+
 @media (min-width: 992px) {
   .am-sideleft {
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
-    left: 0;
-  }
+     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
+    left: 0; 
+  } 
 }
 .am-sideleft .tab-pane {
   position: absolute;
-  top: 60px;
+  /* top: 60px;
   bottom: 0;
   left: 0;
   right: 0;
   overflow-y: auto;
   padding-top: 10px;
   padding-bottom: 10px;
+  */
+  height: 500px;
+  width: 300px;
+  /* background-color: #868ba1; */
+  
+  
 }
 .am-sideleft .tab-pane .ps__scrollbar-y-rail {
   visibility: hidden;
@@ -12113,7 +12121,7 @@ textarea.parsley-success:focus {
 }
 .am-sideleft .chat-search-bar .form-control:focus, .am-sideleft .chat-search-bar .dataTables_filter input:focus, .dataTables_filter .am-sideleft .chat-search-bar input:focus, .am-sideleft .chat-search-bar .form-control:active, .am-sideleft .chat-search-bar .dataTables_filter input:active, .dataTables_filter .am-sideleft .chat-search-bar input:active {
   border-color: #adb5bd;
-}
+} 
 .am-sideleft .chat-search-bar .form-control:focus + .btn, .am-sideleft .chat-search-bar .dataTables_filter input:focus + .btn, .dataTables_filter .am-sideleft .chat-search-bar input:focus + .btn, .am-sideleft .chat-search-bar .sp-container .form-control:focus + button, .sp-container .am-sideleft .chat-search-bar .form-control:focus + button, .am-sideleft .chat-search-bar .dataTables_filter .sp-container input:focus + button, .sp-container .am-sideleft .chat-search-bar .dataTables_filter input:focus + button, .dataTables_filter .am-sideleft .chat-search-bar .sp-container input:focus + button, .sp-container .dataTables_filter .am-sideleft .chat-search-bar input:focus + button, .am-sideleft .chat-search-bar .form-control:active + .btn, .am-sideleft .chat-search-bar .dataTables_filter input:active + .btn, .dataTables_filter .am-sideleft .chat-search-bar input:active + .btn, .am-sideleft .chat-search-bar .sp-container .form-control:active + button, .sp-container .am-sideleft .chat-search-bar .form-control:active + button, .am-sideleft .chat-search-bar .dataTables_filter .sp-container input:active + button, .sp-container .am-sideleft .chat-search-bar .dataTables_filter input:active + button, .dataTables_filter .am-sideleft .chat-search-bar .sp-container input:active + button, .sp-container .dataTables_filter .am-sideleft .chat-search-bar input:active + button {
   border-color: #adb5bd;
   background-color: #fff;
