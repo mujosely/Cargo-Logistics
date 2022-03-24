@@ -1,9 +1,13 @@
 import React from 'react'
-//import HomeLayout from "../components/HomeLayout";
+import logo from "../assets/logo.JPG";
 const Userdashboard = ({children}) => {
   return (
     <>
     <div className="am-header">
+    <div className= "logo">
+             <img src={logo} width="100%" height="100%" marginTop="5%"/>
+
+             </div>
   <div className="am-header-left">
 
     <a href="index.html" className="am-logo" style={{marginLeft: '50px'}}>Cargo Logistics</a>
@@ -81,7 +85,7 @@ const Userdashboard = ({children}) => {
 
   <div className="am-sideleft">
   
-  <div className="tab-content">
+  <div className="tab-content" style={{marginTop: "20%"}}>
     <div id="mainMenu" className="tab-pane active ps ps--theme_default" data-ps-id="1b5ec199-c8ff-61f0-dd91-83676cdf5b91">
       <ul className="nav am-sideleft-menu">
         <li className="nav-item">

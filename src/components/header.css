@@ -58,7 +58,7 @@ a :hover{
     height: 30px;
     width: 70px;  */
 
-} */
+
 .ourmenu1 .fa{
     margin-right: 8px;
 
@@ -80,7 +80,7 @@ text-decoration: underline;
 
 
 
-/* .headerlink{
+ .headerlink{
 
     padding-top: 10px;
     background-color: blue;
@@ -125,14 +125,14 @@ ul a{
 	
 	height: 60px;
 	/* width: 100%; */
-	
 }
-.mymain-nav{
-	/* #7A5542,
+
+/* .mymain-nav{
+	 #7A5542,
     #716664
-    #6C4236 */
+    #6C4236 
 	
-	}
+	} */
 	.allfromhome{
 		background-color: aqua;
 		height: 150vh;

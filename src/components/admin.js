@@ -27,7 +27,7 @@ const Admin = () => {
           {/* <img src="../img/img1.jpg" className="wd-36 rounded-circle" alt="Image" /> */}
         </td>
         <td>
-          <a href="#" className="tx-inverse tx-14 tx-medium d-block">Mark K. Peters</a>
+          <a href="#" className="tx-inverse tx-14 tx-medium d-block">Mark MUTANGANA</a>
           <span className="tx-11 d-block">TRANSID CODE: 1234567890</span>
         </td>
         <td className="tx-12">
@@ -40,7 +40,7 @@ const Admin = () => {
           {/* <img src="../img/img2.jpg" className="wd-36 rounded-circle" alt="Image" /> */}
         </td>
         <td>
-          <a href="#" className="tx-inverse tx-14 tx-medium d-block">Karmen F. Brown</a>
+          <a href="#" className="tx-inverse tx-14 tx-medium d-block">Karemera Alice</a>
           <span className="tx-11 d-block">TRANSID CODE: 1234567890</span>
         </td>
         <td className="tx-12">
@@ -53,7 +53,7 @@ const Admin = () => {
           {/* <img src="../img/img3.jpg" className="wd-36 rounded-circle" alt="Image" /> */}
         </td>
         <td>
-          <a href="#" className="tx-inverse tx-14 tx-medium d-block">Gorgonio Magalpok</a>
+          <a href="#" className="tx-inverse tx-14 tx-medium d-block"> Mugisha Andrew</a>
           <span className="tx-11 d-block">TRANSID CODE: 1234567890</span>
         </td>
         <td className="tx-12">
@@ -92,7 +92,7 @@ const Admin = () => {
           {/* <img src="../img/img5.jpg" className="wd-36 rounded-circle" alt="Image" /> */}
         </td>
         <td>
-          <a href="#" className="tx-inverse tx-14 tx-medium d-block">John L. Goulette</a>
+          <a href="#" className="tx-inverse tx-14 tx-medium d-block">John Ntwari</a>
           <span className="tx-11 d-block">TRANSID CODE: 1234567890</span>
         </td>
         <td className="tx-12">
@@ -113,6 +113,21 @@ const Admin = () => {
         </td>
         <td>Jan 21, 2022 8:34am</td>
       </tr>
+
+      <tr>
+        <td className="pd-l-20 tx-center">
+          {/* <img src="../img/img5.jpg" className="wd-36 rounded-circle" alt="Image" /> */}
+        </td>
+        <td>
+          <a href="#" className="tx-inverse tx-14 tx-medium d-block">John L. Goulette</a>
+          <span className="tx-11 d-block">TRANSID CODE: 1234567890</span>
+        </td>
+        <td className="tx-12">
+          <span className="square-8 bg-pink mg-r-5 rounded-circle" /> Cargo in Transit
+        </td>
+        <td>Mar 30, 2021 10:30am</td>
+      </tr>
+
     </tbody>
   </table>
 </div>
