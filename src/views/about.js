@@ -574,8 +574,8 @@ const AboutUs = () => {
                     </div>
                   </div>
                 </div>
-                {/* Counter END */}
-                {/* Frequently Asked Questions */}
+              
+              
                 <section className="overview-block-ptb white-bg">
                   <div className="container">
                     <div className="row">
@@ -662,9 +662,9 @@ const AboutUs = () => {
                             <h1 className="iq-font-white iq-tw-7"><small>$</small>14<small>/KG</small></h1>
                             <span className="text-uppercase iq-tw-6 iq-font-white">IN LINE Schedule</span>
                           </div>
-                          <ul>
-                            <li> EVERY ASIAN COUNTRY TO RWANDA</li>
-                            <li> We take  3 to  7 days from time </li>
+                          <ul style={{color:"black"}}>
+                            <li >  Every Asian  country and USA  TO RWANDA</li>
+                            <li> We take  3 to  7 days from  request time </li>
                             <li> We supply only legal product</li>
                             <li> Any challenge dont hesitate to call us
                     
@@ -682,10 +682,12 @@ const AboutUs = () => {
                             <h1 className="iq-font-white iq-tw-7"><small>$</small>12<small>/metter square</small></h1>
                             <span className="text-uppercase iq-tw-6 iq-font-white"> PORT Schedule</span>
                           </div>
-                          <ul>
+                          <ul style={{color:"black"}}>
                             
-                          <li>  USA TO RWANDA</li>
-                            <li> We take  3 to  7 days from time </li>
+                          <li>  
+                          Every ASIAN , Australia ,  Europe  and USA  countries  TO RWANDA
+                          </li>
+                            <li> We take  9 up to  30 days from  request time </li>
                             <li> We supply only legal product</li>
                             <li> Any challenge dont hesitate to call us
                     
@@ -700,32 +702,42 @@ const AboutUs = () => {
                       <div className="col-sm-6 col-md-3 re-mt-30 wow flipInY" data-wow-duration="1s">
                         <div className="iq-pricing text-center">
                           <div className="price-title green-bg ">
-                            <h1 className="iq-font-white iq-tw-7"><small>$</small>49<small>/Month</small></h1>
-                            <span className="text-uppercase iq-tw-6 iq-font-white">ADVANCE</span>
+                            <h1 className="iq-font-white iq-tw-7"><small>$</small>19<small>/kg</small></h1>
+                            <span className="text-uppercase iq-tw-6 iq-font-white"> in line Schedule </span>
                           </div>
-                          <ul>
-                            <li>100 MB Disk Space</li>
-                            <li>2 Subdomains</li>
-                            <li>5 Email Accounts</li>
-                            <li>Webmail Support</li>
+                          <ul style={{color:"black"}}>
+                           
+                          <li >  Every Europe country and Australia  TO RWANDA</li>
+                            <li> We take  5 to  10 days from time </li>
+                            <li> We supply only legal product</li>
+                            <li> Any challenge dont hesitate to call us
+                    
+                            </li>
+
+                          
                             <li>Customer Support 24/7</li>
                           </ul>
                           <div className="price-footer">
-                            <a className="button" href="# ">Purchase</a>
+                            <a className="button" href="# "> ship</a>
                           </div>
                         </div>
                       </div> 
                       <div className="col-sm-6 col-md-3 re-mt-30">
                         <div className="iq-pricing text-center">
                           <div className="price-title green-bg ">
-                            <h1 className="iq-font-white iq-tw-7"><small>$</small>99<small>/Month</small></h1>
-                            <span className="text-uppercase iq-tw-6 iq-font-white">UNLIMITED</span>
+                            <h1 className="iq-font-white iq-tw-7"><small>$</small>5<small>/kg</small></h1>
+                            <span className="text-uppercase iq-tw-6 iq-font-white">land transport</span>
                           </div>
-                          <ul>
-                            <li>100 MB Disk Space</li>
-                            <li>2 Subdomains</li>
-                            <li>5 Email Accounts</li>
-                            <li>Webmail Support</li>
+                          <ul style={{color:"black"}}>
+                           
+                          
+                            <li> from kenya , Tanzania up to Rwanda </li>
+                            <li >  we take only 2 up to 4 day </li>
+                            <li> We supply only legal product</li>
+                            <li> Any challenge dont hesitate to call us
+                    
+                            </li>
+
                             <li>Customer Support 24/7</li>
                           </ul>
                           <div className="price-footer">
