@@ -3,7 +3,7 @@ import Dashboard2 from '../views/dashboard2'
 const Odering = () => {
   return (
     <Dashboard2> 
-        <div className="am-pagebody" style={{marginLeft:"230px", marginTop:"100px",marginRight:"50px"}}>
+        <div className="am-pagebody" style={{marginLeft:"300px", marginTop:"100px",marginRight:"50px"}}>
   <div className="card pd-20 pd-sm-40">
     <h6 className="card-body-title">Add new shipment</h6>
     <p className="mg-b-20 mg-sm-b-30"> Connect people with their pproducts with effective means of transport.</p>
