@@ -47,15 +47,17 @@ const Odering = () => {
         
         <div className="col-lg-4">
           <div className="form-group">
-            <label className="form-control-label" style={{color:"black"}}>Expected delivery: <span className="tx-danger">*</span></label>
+            <label className="form-control-label" style={{color:"black"}}>Date: <span className="tx-danger">*</span></label>
             <input className="form-control" type="date" name="date"  placeholder="Enter expected delivery date" />
           </div>
         </div>
 
         <div className="col-lg-4">
           <div className="form-group mg-b-10-force">
+           
             <label className="form-control-label" style={{color:"black"}}> Desciptions: <span className="tx-danger">*</span></label>
-            <input className="form-control" type="text" name="address"  placeholder="Enter address" />
+            <input className="form-control" type="text-area" name=""  placeholder="Enter address" />
+            
           </div>
           </div>
         </div>{/* col-8 */}

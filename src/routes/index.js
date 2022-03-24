@@ -9,7 +9,9 @@ import Allshipment from "../components/allshipment";
 import Addshipment from "../components/addshipment";
 import Product from "../components/product";
 import Employer from "../components/employer";
+import Nemployer from "../components/new_employer";
 import Customer from "../components/customer";
+import Admin from "../components/admin";
 import Chart from "../components/chart";
 // end user pages
 import Odering from "../components/ship_odering";
@@ -38,7 +40,9 @@ const Index = () => {
         <Route path="/addship" element={<Addshipment/>}></Route> 
         <Route path="/product" element={<Product/>}></Route>
         <Route path="/employer" element={<Employer/>}></Route>
+        <Route path="/newemployer" element={<Nemployer/>}></Route>
         <Route path="/customer" element={<Customer/>}></Route>
+        <Route path="/admin" element={<Admin/>}></Route>
         <Route path="/chart" element={<Chart/>}></Route>
 
          {/* end-user pages */}

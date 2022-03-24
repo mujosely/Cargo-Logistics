@@ -29,7 +29,8 @@ const AboutUs = () => {
 
       <div className='about_contents'>
       <h1>What we do</h1>
-    <p> to manage and coordinate the flow of the products from the supplier point to the consumer's hand. Taking into consideration 
+    <p> to manage and coordinate the flow of the products from the supplier point
+       to the consumer's hand. Taking into consideration 
       delivering service and quality at the desired level at the lowest possible cost</p>
       </div>
     
