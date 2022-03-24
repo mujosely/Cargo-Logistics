@@ -5,15 +5,10 @@ import HomeLayout from "../components/HomeLayout";
 import  "../views/home.css"
 import { Form, Input, Checkbox,notification } from 'antd';
 import { MailFilled, LockOutlined , UserOutlined,PhoneOutlined } from '@ant-design/icons';
-import {Carousel} from 'bootstrap';
 
-import aircraft from "../assets/aircraft.jpeg" 
-import stock from "../assets/stock.jpeg"
-
- import lorrytransport from "../assets/lorrytransport.jpeg" 
- import shiptransport from "../assets/shiptransport.jpeg"
 import { Card } from 'antd';
 // import cargologistics from "../services/cargologistics";
+import  cargologistics from "../services/cargologistics"
 
 
 
@@ -33,7 +28,21 @@ const Home = () => {
   };
   const onFinish = (values) => {
     console.log('Success:', values);
-  };
+      console.log('Received values of form', values);
+      cargologistics.createAccount(values).then((res) => {
+        console.log('result',res);
+        if (!res) {
+          return notification.error({ message: "server is down" })
+        }
+        if (!res.status === 200) {
+          return notification.success({ message: "your account has been created successfully" })
+        }
+        else {
+          return notification.success({ message: !res.data.error ? res.data.message : res.data.error })
+        }
+      })
+    };
+  
 
   const onFinishFailed = (errorInfo) => {
     console.log('Failed:', errorInfo);
@@ -78,11 +87,11 @@ const Home = () => {
       <div className="bg-home12">
       <div className="mymain-nav">
   
-<a href="#" onClick={showModal}>SignUp</a> 
+<a href="#" onClick={showMyModal}>sign-in</a> 
 
 </div>
 <div className="mybutton-b1">
-      <a href="#"><button ><h2><a href="#" onClick={showMyModal} style={{color:"black",fontSize:"small", backgroundColor:"none"}} >Sign-in  </a> </h2></button></a>
+      <a href="#"><button ><h2><a href="#"onClick={showModal}  style={{color:"black",fontSize:"small", backgroundColor:"none"}} >Create-account  </a> </h2></button></a>
         </ div>
         <div className="myonlymodal">
         <Modal title="PLEASE REGISTER HERE!!!!" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}   style={{  backgroundColor: "black" }}>
@@ -160,7 +169,7 @@ placeholder="Password"
 
 
 <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-<Button type="primary" htmlType="submit"style={{ width: "160px", height: "40px", marginLeft: "2%", marginTop: "1px" ,background:"none" }} >
+<Button type="primary" htmlType="submit"style={{ width: "160px", height: "40px", marginLeft: "2%", marginTop: "1px" ,background:"black" }} >
  Submit
 </Button>
 </Form.Item>
@@ -233,7 +242,7 @@ placeholder="Password"
 </Form>
 
       </Modal>
-
+y
 
 
 

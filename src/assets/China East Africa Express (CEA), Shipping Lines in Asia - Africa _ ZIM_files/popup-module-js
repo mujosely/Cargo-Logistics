@@ -1,0 +1,243 @@
+/* Minification failed. Returning unminified contents.
+(68,52-53): run-time error JS1100: Expected ',': =
+ */
+$(document).ready(function () {
+    var href = window.location.origin;
+    var identifier = $.cookie("uniqueUserId");    
+    var siteTrackerUrl = $("body").data('sitetracker-url');
+    var siteId = $("body").data('piwik-site-id');    
+    var tracker = null;
+    var oneSlideDots = true;
+    if (typeof Piwik !== 'undefined') {
+        tracker = Piwik.getTracker(siteTrackerUrl, siteId);
+    }
+    
+    PopupInit();   
+
+    if ($(".bannerPopUpContainer").length === 1) {       
+        var id = $(".bannerPopUpContainer").data('banner-id');
+        var title = $(".bannerPopUpContainer").find(".banner-title").text();
+        title = $.trim(title);
+        trackView(id, title);
+    }
+
+    $(".dont-show-checkbox").bind('click', null, dontShowAgain);
+    $(".banner-approve-btn").bind('click', null, approvalRequired);
+
+
+    function PopupInit() {
+
+        var nextTranslation = $('.popup-slider').attr('data-next');
+        var prevTranslation = $('.popup-slider').attr('data-prev');
+
+
+        $('.popup-slider').on('init', function (event, slick, direction) {
+            slideHeightAdjustment(slick.$slides);
+            if (slick.slideCount == 1) oneSlideDots = false;
+            setActions($(event.currentTarget).find(".bannerPopUpContainer.slick-current.slick-active"), $(event.currentTarget).siblings(".action-box"));
+        });
+
+        $('.popup-slider').slick({
+            rtl: pageIsRtl,
+            dots: true,
+            arrows: true,
+            infinite: true,
+            fade: true,
+            prevArrow: '<button type="button" data-role="none" class="slick-prev slick-btn" aria-label="' + prevTranslation + '" tabindex="0" role="button">' + prevTranslation + '</button>',
+            nextArrow: '<button type="button" data-role="none" class="slick-next slick-btn" aria-label="' + nextTranslation + '" tabindex="0" role="button">' + nextTranslation + '</button>'
+        }, true);
+
+        $('.popup-slider').slick('slickSetOption', {
+            dots: oneSlideDots
+        }, true);
+
+        setBannerCount();
+
+
+        $('.popup-slider').on('afterChange', function (event, slick, direction) {
+            var currentItem = $(event.currentTarget).find(".bannerPopUpContainer.slick-current.slick-active");
+            var bannerId = $(currentItem).data('banner-id');
+            var bannerTitle = $(currentItem).find(".banner-title").text();
+            bannerTitle = $.trim(bannerTitle);            
+            trackView(bannerId, bannerTitle);            
+            slideHeightAdjustment(slick.$slides, currentItem.data('height'));
+            var actionBox = $(event.currentTarget).siblings(".action-box");
+            setActions(currentItem, actionBox);
+        });
+
+        $('#popup_module').modal('show');       
+    }
+
+    function slideHeightAdjustment($slides, height = null) {
+        var allHeight;
+        $($slides).each(function (slide) {
+            if (!allHeight) {
+                allHeight = height != null ? height : $(this).data('height');
+            }
+
+            $(this).children(":first").css('height', allHeight != 0 ? allHeight : '450px');
+        })
+    }
+
+
+    function setActions(currentItem, actionBox) {
+        var id = $(currentItem).data('banner-id');
+        var title = $(currentItem).data('banner-title');
+        var showApprove = $(currentItem).data('show-approve');
+        var notShowAgain = $(currentItem).data('dont-show-again');
+
+        if (showApprove && showApprove === "True") {
+            $(actionBox).find(".banner-approve-btn").attr('data-id', id);
+            $(actionBox).find(".banner-approve-btn").attr('data-title', title);
+            $(actionBox).find(".approve-btn").show();
+        } else {
+            $(actionBox).find(".banner-approve-btn").attr('data-id', '');
+            $(actionBox).find(".banner-approve-btn").attr('data-title', '');
+            $(actionBox).find(".approve-btn").hide();
+        }
+
+        if (notShowAgain && notShowAgain === "True") {
+            $(actionBox).find(".dont-show-checkbox").attr('data-id', id);
+            $(actionBox).find(".dont-show-checkbox").attr('data-title', title);
+            $(actionBox).find(".dont-show-box").show();
+        } else {
+            $(actionBox).find(".dont-show-checkbox").attr('data-id', '');
+            $(actionBox).find(".dont-show-checkbox").attr('data-title', '');
+            $(actionBox).find(".dont-show-box").hide();
+        }
+
+        if (showApprove && notShowAgain && showApprove !== "True" && notShowAgain !== "True" && !oneSlideDots) {
+            $(actionBox).hide();
+            $('.slick-slider').css('border-bottom', '2px solid grey')
+        }
+    }
+
+
+
+    function setBannerCount() {       
+        $(".bannerPopUpContainer").each(function (index, bannerItem) {
+            var bannerId = $(bannerItem).data('banner-id');
+            var url = href + '/api/SetBannerView/' + identifier + '/' + bannerId;
+            $.ajax({
+                url: url,
+                type: 'GET',
+            }).done(function (data) {
+
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+                console.log("set banner count error");
+            });
+        });
+    }
+
+    function dontShowAgain(e) {        
+        var url = href + '/api/SetBannerStopShow';        
+        var id = $(e.target).data('id');
+        var title = $(e.target).data('title');
+
+        var ids = ['' + id+''];
+        $.post(url, { identifier: identifier, bannerIDs: ids })
+            .done(function (data) {
+                
+        }).fail(function (jqXHR, textStatus, errorThrown) {
+            console.log("dont show again banner error");
+        });
+        if (tracker) {
+            tracker.trackEvent('Click',
+                JSON.stringify({ bannerID: id, eventType: 'popup-ZIM.COM', title: title }));
+        }
+    }
+
+    function approvalRequired(e) {
+        var slickSlidesCount = document.querySelector(".popup-module .popup-slider .slick-list .slick-track").childElementCount;
+        var id = e.currentTarget.dataset.id;
+        var title = $(e.target).data('title');
+
+        var url = href + '/api/SetBannerStopShow';
+        var url = href + '/api/SetBannerApproval/' + identifier + '/' + id;
+        $.ajax({
+            url: url,
+            type: 'GET',
+        }).done(function (data) {
+
+        }).fail(function (jqXHR, textStatus, errorThrown) {
+            console.log("set banner count error");
+        });
+        e.preventDefault();
+
+        if (tracker) {
+            tracker.trackEvent('Click',
+                JSON.stringify({ bannerID: id, eventType: 'popup-ZIM.COM', title: title }));
+        }
+
+        if (slickSlidesCount > 1) {
+            var nextTranslation = $('.popup-slider').attr('data-next');
+            var prevTranslation = $('.popup-slider').attr('data-prev');
+
+            $('.popup-slider').slick('unslick');
+
+            var bannerSlide = document.querySelector('[data-banner-id="' + id + '"]');
+
+
+            bannerSlide.remove();
+            if (slickSlidesCount === 2) oneSlideDots = false;
+            $('.popup-slider').slick({
+                rtl: pageIsRtl,
+                dots: oneSlideDots,
+                arrows: true,
+                infinite: true,
+                fade: true,
+                prevArrow: '<button type="button" data-role="none" class="slick-prev slick-btn" aria-label="' + prevTranslation + '" tabindex="0" role="button">' + prevTranslation +'</button>',
+                nextArrow: '<button type="button" data-role="none" class="slick-next slick-btn" aria-label="' + nextTranslation + '" tabindex="0" role="button">' + nextTranslation + '</button>'
+            });
+        } else {
+            $('.popup-module .btn-close').click();
+        }
+    }
+
+    if ($('.error-block.gb-banner').length > 0) {
+
+        var $banner = $('.error-block.gb-banner');
+        var top = $banner.data('top');
+        var right = $banner.data('right');
+        var bottom = $banner.data('bottom');
+        var left = $banner.data('left');
+
+        if (top && top.length > 0) {
+            $banner.css("top", top);
+        }
+        if (right && right.length > 0) {
+            $banner.css("right", right);
+        }
+        if (bottom && bottom.length > 0) {
+            $banner.css("bottom", bottom);
+        }
+        if (left && left.length > 0) {
+            $banner.css("left", left);
+        }
+    }
+
+
+    if ($('.popup-module .error-block').data('width')) {
+        var width = $('.popup-module .error-block').data('width');
+        $('.popup-module .error-block').css('width', width);
+    }
+    if ($('.popup-module.inner-banner:not(.banner-sidebar)').data('width')) {
+        $('.popup-module.inner-banner:not(.banner-sidebar)').css('width', $('.popup-module.inner-banner:not(.banner-sidebar)').data('width'));
+    }
+
+
+    function trackView(bannerId, bannerTitle) {       
+        if (tracker) {
+            tracker.trackEvent('View',
+                JSON.stringify({ bannerID: bannerId, eventType: 'popup-ZIM.COM', title: bannerTitle }));
+        }
+    }
+});
+
+
+
+
+
+
+
+;
