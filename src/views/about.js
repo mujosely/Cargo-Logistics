@@ -223,7 +223,7 @@ const AboutUs = () => {
                                 <i aria-hidden="true" className="ion-ios-checkmark-outline" />
                                 <h4 className="iq-tw-6">Responsive Design</h4>
                                 <div className="fancy-content-01">
-                                  <p>Lorem ipsum madolor sit amet, consectetur adipisicing sed do eiusmod empor incididunt</p>
+                                  <p>cargo logistics synstem  can be used in both machine and smart phone or tablet </p>
                                 </div>
                               </div>
                             </a>
@@ -234,7 +234,7 @@ const AboutUs = () => {
                                 <i aria-hidden="true" className="ion-ios-color-wand-outline" />
                                 <h4 className="iq-tw-6">Easy to Use</h4>
                                 <div className="fancy-content-01">
-                                  <p>Lorem ipsum madolor sit amet, consectetur adipisicing sed do eiusmod empor incididunt</p>
+                                  <p>  This system is user friendly and it has efficient user interaction </p>
                                 </div>
                               </div>
                             </a>
@@ -245,7 +245,7 @@ const AboutUs = () => {
                                 <i aria-hidden="true" className="ion-ios-copy-outline" />
                                 <h4 className="iq-tw-6">Well Documentation</h4>
                                 <div className="fancy-content-01">
-                                  <p>Lorem ipsum madolor sit amet, consectetur adipisicing sed do eiusmod empor incididunt</p>
+                                  <p> It contains all document and video that can help end user to interact and understand the system</p>
                                 </div>
                               </div>
                             </a>
@@ -271,7 +271,7 @@ const AboutUs = () => {
                                 <i aria-hidden="true" className="ion-ios-photos-outline" />
                                 <h4 className="iq-tw-6">Perfect Showcase</h4>
                                 <div className="fancy-content-01">
-                                  <p>Lorem ipsum madolor sit amet, consectetur adipisicing sed do eiusmod empor incididunt</p>
+                                  <p>Best view and and disign  Best view and and disign Best view and and disign Best view and and disign</p>
                                 </div>
                               </div>
                             </a>
@@ -282,7 +282,7 @@ const AboutUs = () => {
                                 <i aria-hidden="true" className="ion-ios-heart-outline" />
                                 <h4 className="iq-tw-6">Unlimited Features</h4>
                                 <div className="fancy-content-01">
-                                  <p>Lorem ipsum madolor sit amet, consectetur adipisicing sed do eiusmod empor incididunt</p>
+                                  <p> It contain all many features that are nedeed in logistc transaction </p>
                                 </div>
                               </div>
                             </a>
@@ -293,7 +293,7 @@ const AboutUs = () => {
                                 <i aria-hidden="true" className="ion-ios-plus-outline" />
                                 <h4 className="iq-tw-6">And Many More</h4>
                                 <div className="fancy-content-01">
-                                  <p>Lorem ipsum madolor sit amet, consectetur adipisicing sed do eiusmod empor incididunt</p>
+                                  <p>madolor sit amet, consectetur adipisicing sed do eiusmod empor incididunt</p>
                                 </div>
                               </div>
                             </a>
@@ -310,7 +310,7 @@ const AboutUs = () => {
                     <div className="row row-eq-height">
                       <div className="col-md-6 text-left iq-ptb-80 green-bg">
                         <div className="iq-app-info">
-                          <h2 className="heading-left iq-font-white white iq-tw-6 ">App Screenshots</h2>
+                          <h2 className="heading-left iq-font-white white iq-tw-6 ">Cargo logistics system Screenshots</h2>
                           <div className="lead iq-tw-6 iq-mb-20">Appino is here with its best screenshot, from this photo gallery you can get idea about this application.</div>
                           <h4 className="iq-mt-50 iq-font-white iq-tw-6 iq-mb-15">Awesome Design</h4>
                           <p className>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, Lorem Ipsum is simply dummy text of the printing and typesetting indus</p>
