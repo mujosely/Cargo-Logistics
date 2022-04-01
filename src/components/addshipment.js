@@ -2,6 +2,7 @@ import React from 'react'
 import Dashboard from "../views/dashboard"
 
 const Addshipment = () => {
+
   // const getData = async() => {
   //   const d = await fetch('https://cargoapp.herokuapp.com/api/enquiry/', {
   //     method: 'GET',
@@ -19,6 +20,11 @@ const Addshipment = () => {
   // useEffect(() => {
   //   getData();
   // }, [])
+
+  const payment=(e)=>{
+    document.getElementById("pay").style.display="block";
+  }
+
   return (
       <Dashboard>
    <div className="am-pagebody" style={{marginLeft:"270px", marginTop:"100px",marginRight:"50px"}}>
@@ -118,13 +124,38 @@ const Addshipment = () => {
           </div>
           </div>
         </div>{/* col-8 */}
-
+       
+ 
       <div className="form-layout-footer">
-        <button className="btn btn-info mg-r-5">Submit </button>
+        <button className="btn btn-info mg-r-5" onClick={payment}>Submit </button>
         <button className="btn btn-secondary">Cancel</button>
       </div>{/* form-layout-footer */}
     </div>{/* form-layout */}
-  </div>{/* card */}
+<div className='paymant-roll'>
+    
+        <div className='paymant-mode'style={{ height:"200px", width:"300px", background:"blue", marginLeft:"3%", display:"none" }} id="pay">
+        <h1 > Payment mode</h1>
+      
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          
+         
+  <option selected 
+  > select payment mode</option>
+  <option value="1" >Eaypall</option>
+  <option value="2">Equity</option>
+  <option value="3">Bk</option>
+  
+</select> <br></br>
+<button type="button" class="btn btn-primary">pay</button>
+
+
+        </div>
+        </div>
+        </ div>
+
+
+    
+{/* card */}
   
 
 
