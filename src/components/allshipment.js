@@ -1,7 +1,33 @@
-import React from 'react'
+import React ,{useState,useEffect} from 'react'
 import Dashboard from "../views/dashboard";
 
 const Allshipment = () => {
+  let [enquiries, setEnquiries] = useState([]);
+  const getData = async() => {
+    const shipps = await fetch('https://cargoapp.herokuapp.com/api/enquiry/', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': "Bearer " + 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIn0.tePpJjhy0G3gxzyG_zaINhA6iWSAN_mM2sP4aWJ84_I'
+      }
+
+    });
+    let data = await shipps.json()
+    if (shipps.status === 200){
+      setEnquiries(data);
+      console.log(data)
+    }else{
+      console.log(data)
+    }
+  }
+
+  useEffect(() => {
+    getData();
+  }, [])
+  // var viewAllShip= Allshipment.map((item)=>{  });
+//  <tr key={item.id}> 
+
+
   return (
       <Dashboard>
      <div className="card pd-20 pd-sm-40" style={{marginLeft:"300px", marginTop:"100px",marginRight:"50px"}}>
@@ -10,6 +36,7 @@ const Allshipment = () => {
   <div className="table-wrapper">
     <table id="datatable1" className="table display responsive nowrap">
       <thead>
+        
         <tr>
           <th className="wd-15p">First name</th>
           <th className="wd-15p">Last name</th>
@@ -23,89 +50,17 @@ const Allshipment = () => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-        <td>Garrett</td>
-          <td>Winters</td>
-          <td>Bt002</td>
-          <td>2011/07/25</td>
-          <td>Kigali</td>
-          <td>Rubavu</td>
-          <td>g.winters@datatables.net</td>
-          <td>This product is emergency </td>
-          <td> <div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary pd-x-25 active">Update</button>
-  
-  
-       </div>
-       </td>
-        </tr>
-        {/* <tr>
-          <td>Garrett</td>
-          <td>Winters</td>
-          <td>Bt002</td>
-          <td>20</td>
-          <td>2011/07/25</td>
-          <td>Kigali</td>
-          <td>Rubavu</td>
-          <td>g.winters@datatables.net</td>
-          <td>This product is emergency </td>
-          <td> <div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary pd-x-25 active">Update</button>
-  
-  
-       </div>
-       </td>
-        </tr>
-        <tr>
-          <td>Ashton</td>
-          <td>Cox</td>
-          <td>Bf002</td>
-          <td>4</td>
-          <td>2009/01/12</td>
-          <td>Dubai</td>
-          <td>Kigali</td>
-          <td>a.cox@datatables.net</td>
-          <td>This product is emergency </td>
-          <td> <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary pd-x-25 active">Update</button>
-  
-       </div>
-       </td>
-        </tr>
-        <tr>
-          <td>Cedric</td>
-          <td>Kelly</td>
-          <td>Bl042</td>
-          <td>20</td>
-          <td>2012/03/29</td>
-          <td>USA</td>
-          <td>Bujumbura</td>
-          <td>c.kelly@datatables.net</td>
-          <td>This product is emergency </td>
-          <td> <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary pd-x-25 active">Update</button>
-  
-       </div>
-       </td>
-        </tr>
-        <tr>
-          <td>Airi</td>
-          <td>Satou</td>
-          <td>By392</td>
-          <td>13</td>
-          <td>2008/11/28</td>
-          <td>Canada</td>
-          <td>Japan</td>
-          <td>a.satou@datatables.net</td>
-          <td>This product is emergency </td>
-          <td> <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary pd-x-25 active">Update</button>
-  
-       </div>
-       </td>
-        </tr> */}
-        
-        
+        {enquiries.map((enquiry, index)=>{
+          return (
+            <tr key={index}>
+              <td>{enquiry.address}</td>
+               <td>{enquiry.enq_Code}</td>
+              <td>{enquiry.date_Arriv}</td> 
+              
+            </tr>
+          )
+        })}
+ 
       </tbody>
     </table>
   </div>{/* table-wrapper */}

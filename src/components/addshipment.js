@@ -2,12 +2,29 @@ import React from 'react'
 import Dashboard from "../views/dashboard"
 
 const Addshipment = () => {
+  // const getData = async() => {
+  //   const d = await fetch('https://cargoapp.herokuapp.com/api/enquiry/', {
+  //     method: 'GET',
+  //     headers: {
+  //       'COntent-Type': 'application/json'
+  //     }
+
+  //   });
+  //   console.log(d);
+  //   if (d.status === 200){
+  //     console.log(await d.json())
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   getData();
+  // }, [])
   return (
       <Dashboard>
    <div className="am-pagebody" style={{marginLeft:"270px", marginTop:"100px",marginRight:"50px"}}>
   <div className="card pd-20 pd-sm-40">
     <h6 className="card-body-title">Add new shipment</h6>
-    <p className="mg-b-20 mg-sm-b-30"> Connect people with their pproducts with effective means of transport.</p>
+    <p className="mg-b-20 mg-sm-b-30"> Connect people with their pproducts sing effective means of transport.</p>
     <div className="form-layout">
       <div className="row mg-b-25">
         <div className="col-lg-4">
