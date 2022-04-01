@@ -1,0 +1,11 @@
+
+    @media screen  and (max-width: 764px){
+        .paymant-background{
+            height: 300px;
+            width:100%;
+            background-color: aquamarine;
+        }
+    }
+
+        
+    

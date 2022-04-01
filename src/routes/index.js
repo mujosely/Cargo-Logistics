@@ -12,7 +12,7 @@ import Employer from "../components/employer";
 import Nemployer from "../components/new_employer";
 import Customer from "../components/customer";
 import Admin from "../components/admin";
-import Chart from "../components/chart";
+
 // end user pages
 import Odering from "../components/ship_odering";
 import Tracks from "../components/tracks";
@@ -21,9 +21,11 @@ import SignIn from "../views/signin"
 import SignUp from "../views/signup"
 import Booking from "../views/booking"
 import Homepage from "../views/homepage"
+import Flatter from "../views/flatter";
 
 
 import { Routes , Route } from "react-router-dom"; 
+
 const Index = () => {
   
       return(
@@ -48,7 +50,7 @@ const Index = () => {
         <Route path="/newemployer" element={<Nemployer/>}></Route>
         <Route path="/customer" element={<Customer/>}></Route>
         <Route path="/admin" element={<Admin/>}></Route>
-        <Route path="/chart" element={<Chart/>}></Route>
+        <Route path="/flatter" element={<Flatter/>}></Route>
 
          {/* end-user pages */}
          <Route path="/order" element={<Odering/>}></Route>
